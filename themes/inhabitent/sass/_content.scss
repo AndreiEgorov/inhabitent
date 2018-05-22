@@ -47,3 +47,253 @@
 .bypostauthor {
 	display: block;
 }
+body{
+	background-color: red;
+}
+.footer-container{
+
+	background-image: url(../../assets/images/dark-wood.png);
+}	
+
+.footer-container{
+	display:flex;
+	flex-wrap: wrap;
+	padding: 0 15px;
+
+	.contact-info{
+		flex-basis: 25%;
+		color: white;
+		h3{
+			color:#d99054;
+		}
+	}
+	.business-hours{
+		flex-basis: 25%;
+		color: white;
+		h3{
+			color:#d99054;
+		}
+	}
+	.logo3{
+		flex-basis:50%;
+		display:flex;
+		justify-content: flex-end;
+		img{
+			width: 300px;
+			height: 100px;
+		}
+	}
+	.site-info{
+		flex-basis: 100%;
+		display: flex;
+		justify-content: center;
+		a{
+			color: white;
+			text-decoration: none;
+		}
+		
+
+	}
+
+}
+
+.header-container{
+	display:flex;
+	justify-content: space-between;
+	padding: 0 15px;
+	position: absolute;
+    width: 100%;
+	nav{
+		list-style: none;
+		display: flex;
+		justify-content: space-between;
+		flex-basis: 30%;
+		align-self: center;
+		color: white;
+	}
+	.logo1{
+		flex-basis: 50%;
+		img{
+			max-width: 50px;
+		}
+	}
+	.search-bar{
+		align-self: center;
+
+	}
+
+}
+	
+.home-banner{
+	background-image: url("../../assets/images/home-hero.jpg");
+	background-size: cover;
+    background-position: center;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	
+}
+.shop-stuff{
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+
+	.section-title{
+		flex-basis: 100%;
+		text-align: center;
+	}
+	.shop-stuff-box{
+		flex-basis: 23%;
+		border: 1px solid grey;
+		border-top: 4px solid grey;
+		text-align: center;
+		padding: 10px;
+	
+		.stuff-box-icon{
+			width: 70px;
+		}
+
+		form{
+			input{
+				background-color:#248a83;
+				text-shadow: none;
+				box-shadow: none;
+				border: none;
+				border-radius: 0px;
+				color: white;
+			}
+		}
+	}
+}
+.inhabitent-journal-container{
+	display: flex;
+	flex-wrap: wrap;
+	
+
+	.section-title{
+		flex-basis: 100%;
+		text-align: center;
+	}
+
+	.article-set{
+		flex-basis:100%;
+
+		display: flex;
+		margin: 0;
+		padding:0;
+		justify-content: space-evenly;
+
+	
+		.journal-article{
+			list-style: none;
+
+			border: 1px solid black;
+			flex-basis: 31.5%;
+
+			.journal-article-image{
+				height: 200px;
+				background-color: green;
+			}
+			.journal-article-info{
+				border: 1px solid grey;
+				border-top: 4px solid grey;
+				padding: 10px;
+
+				form{
+					
+		
+					input{
+						background-color: white;
+						text-shadow: none;
+						box-shadow: none;
+						border-radius: 0px;
+						color: black;
+						border: 1px solid black;		
+					}
+				}
+				
+			}
+
+		}
+	}
+
+}
+.adventures-container{
+	display: flex;
+	flex-wrap: wrap;
+	
+	
+
+	.section-title{
+		flex-basis: 100%;
+		text-align: center;
+	}
+
+	.adventure-stories{
+		justify-content: center;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		flex-basis: 100%;
+
+		display: grid;
+		grid-template-columns: repeat(4, 23%);
+		grid-template-rows: 250px 250px;
+
+		// padding: 2%;
+		gap: 17px;
+
+		.box1{
+			grid-column: 1/3;
+			grid-row: 1/3;
+			background-color: greenyellow;
+
+		}
+		.box2{
+			grid-column: 3/5;
+			grid-row: 1/2;
+			background-color: lightgreen;
+		}
+		.box3{
+			grid-column: 3/4;
+			grid-row: 2/3;
+			background-color: olive;
+		}
+		.box4{
+			grid-column: 4/5;
+			grid-row: 2/3;
+			background-color: lawngreen;
+		}
+
+		form{
+			
+			input{
+				background-color: transparent;
+				text-shadow: none;
+				box-shadow: none;
+				border-radius: 0px;
+				color: balck;
+				border: 1px solid black;
+				
+			}
+		}
+	
+
+	}
+	#more-adventures-btn{
+		flex-basis: 100%;
+		padding:17px;
+
+		input{
+			background-color: #248a83;
+			text-shadow: none;
+			box-shadow: none;
+			border-radius: 0px;
+			color: white;
+			border: none;		
+						
+	}
+	}
+	 
+}
