@@ -9,30 +9,7 @@ get_header(); ?>
 
 	<body class="homepage-template-default">
 
-		<header>
-			<div class="header-container">
-				<div class="logo1">
-				<img src="<?php echo get_template_directory_uri() ?>/assets/images/logos/inhabitent-logo-tent-white.svg"  alt="Inhabitent Logo" />
-				</div>
-
-				<nav>
-					<li>SHOP</li>
-					<li>JOURNAL</li>
-					<li>ABOUT</li>
-					<li>FIND US</li>
-				</nav>
-
-				<div class="test">
-
-				</div>
-
-				<div class="search-bar">
-					<form action="#" method="GET" >
-					<input type="search" placeholder="TYPE AND HIT ENTER...">
-					</form>
-				</div>
-			</div>
-		</header>
+		
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
