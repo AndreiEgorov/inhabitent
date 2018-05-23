@@ -17,7 +17,44 @@ get_header(); ?>
 				<img src="<?php echo get_template_directory_uri() ?>/assets/images/logos/inhabitent-logo-full.svg"  alt="Inhabitent Logo" />	
 			</div>	
 
-			<div class="shop-stuff">
+
+<!-- Shop stuff code to replace markup-->
+
+<section class="shop-stuff">
+	<div class="section-title">
+		<h2> Shop Stuff</h2>
+	</div>
+	
+	<?php
+	$terms = get_terms(array(
+		'taxonomy' => "product_type",
+		'hide_empty' => 0,
+	));
+	//d($terms);
+	if(!empty($terms) && ! is_wp_error( $terms )) : ?>
+
+	
+
+			<?php foreach ( $terms as $term ) : ?>
+
+
+				<div class="shop-stuff-box">
+					<img src="<?php echo get_template_directory_uri() .'/assets/images/product-type-icons/' . $term->slug; ?>.svg" alt="<?php echo $term->name; ?>"/ >
+					<p><?php echo $term->description; ?></p>
+
+					<p>
+						<a href="<?php echo get_term_link( $term ); ?>" class="btn"> <?php echo $term->name; ?> Stuff </a>
+					</p>
+
+				</div>
+
+			<?php endforeach; ?>
+	
+		
+	<?php endif; ?>	
+</section>
+
+			<!-- <div class="shop-stuff">
 				
 				<div class="section-title">
 					<h2>SHOP STUFF</h2>
@@ -55,11 +92,30 @@ get_header(); ?>
 					</form>
 				</div>
 
-			</div>
+			</div> -->
+
+
+
+
 
 			<div class="inhabitent-journal-container">
+				<div class="div">
+			<?php
+				$args = array( 'post_type' => 'post', 'posts_per_page' =>2, 'order' => 'ASC' );
+				$product_posts = get_posts( $args ); // returns an array of posts
+				?>
+				<?php foreach ( $product_posts as $post ) : setup_postdata( $post ); ?>
+				<h2 clr><?php the_title(); ?> </h2>
+				<?php the_meta(); ?>
+			<?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> / <?php red_starter_posted_by(); ?>
+				
+				<?php the_post_thumbnail(); ?>
+				
+				<?php endforeach; wp_reset_postdata(); ?>
 
-				<div class="section-title">
+</div>
+
+				<!-- <div class="section-title">
 					<h2>INHABITENT JOURNAL</h2>
 				</div>
 
@@ -101,7 +157,7 @@ get_header(); ?>
 
 						</div>
 					</li>
-				</ul>	
+				</ul>	 -->
 
 			</div>
 
