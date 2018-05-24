@@ -33,13 +33,10 @@ get_header(); ?>
 	//d($terms);
 	if(!empty($terms) && ! is_wp_error( $terms )) : ?>
 
-	
-
 			<?php foreach ( $terms as $term ) : ?>
 
-
 				<div class="shop-stuff-box">
-					<img src="<?php echo get_template_directory_uri() .'/assets/images/product-type-icons/' . $term->slug; ?>.svg" alt="<?php echo $term->name; ?>"/ >
+					<img src="<?php echo get_template_directory_uri() .'/assets/images/product-type-icons/' . $term->slug; ?>.svg" class="stuff-box-icon" alt="<?php echo $term->name; ?>"/ >
 					<p><?php echo $term->description; ?></p>
 
 					<p>
@@ -52,9 +49,9 @@ get_header(); ?>
 	
 		
 	<?php endif; ?>	
-</section>
 
-			<!-- <div class="shop-stuff">
+
+	<!-- <div class="shop-stuff">
 				
 				<div class="section-title">
 					<h2>SHOP STUFF</h2>
@@ -94,26 +91,39 @@ get_header(); ?>
 
 			</div> -->
 
+</section>
 
-
+			
 
 
 			<div class="inhabitent-journal-container">
-				<div class="div">
+			
+				<div class="section-title">
+					<h2>INHABITENT JOURNAL</h2>
+				</div>
 			<?php
-				$args = array( 'post_type' => 'post', 'posts_per_page' =>2, 'order' => 'ASC' );
+				$args = array( 'post_type' => 'post', 'posts_per_page' =>3, 'order' => 'ASC' );
 				$product_posts = get_posts( $args ); // returns an array of posts
 				?>
+			<div class="set-of-article-boxes">				
 				<?php foreach ( $product_posts as $post ) : setup_postdata( $post ); ?>
-				<h2 clr><?php the_title(); ?> </h2>
-				<?php the_meta(); ?>
-			<?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> / <?php red_starter_posted_by(); ?>
-				
-				<?php the_post_thumbnail(); ?>
-				
+				<div class="journal-article" >
+
+					<div class="journal-article-image">
+						<?php the_post_thumbnail(); ?>
+					</div>
+
+					<div class= "journal-article-info">
+						<?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> 			
+						<h2><?php the_title();?> </h2>
+						<a href="<?php the_permalink();?>">READ ENTRY</a>
+					</div>	
+
+				</div>
 				<?php endforeach; wp_reset_postdata(); ?>
 
-</div>
+			</div>
+
 
 				<!-- <div class="section-title">
 					<h2>INHABITENT JOURNAL</h2>

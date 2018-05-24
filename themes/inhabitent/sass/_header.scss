@@ -1,0 +1,51 @@
+.header-container{
+	display:flex;
+	justify-content: space-between;
+	padding: 0 15px;
+	position: absolute;
+	width: 100%;
+
+	//nav and search bar
+	.main-navigation{
+	    flex-basis: 50%; 
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		.menu-main-menu-container{
+			flex-basis: 65%;
+		
+			.menu{
+				text-transform: uppercase;
+				display: flex;
+				justify-content: space-evenly;
+
+				a{
+					color: white
+				}
+			}
+			
+		}
+		form{
+		
+			flex-basis: 35%;
+		}
+	}
+
+	.logo1{
+		flex-basis: 50%;
+		img{
+			max-width: 50px;
+		}
+	}
+	
+	
+
+
+	
+	.search-bar{
+		align-self: center;
+
+	}
+
+}
