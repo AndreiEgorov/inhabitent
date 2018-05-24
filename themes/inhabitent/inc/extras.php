@@ -107,3 +107,41 @@ function inhabitent_wp_trim_excerpt( $text ) {
 
 remove_filter( 'get_the_excerpt', 'wp_trim_excerpt' );
 add_filter( 'get_the_excerpt', 'inhabitent_wp_trim_excerpt' );
+
+//Modify login page
+
+/**
+ * login_head   (action)
+ * login_headerurl    (filter)
+ * login_headertitle (filter)
+ */
+add_action('login_head', 'inhabitent_login_logo');
+
+function inhabitent_login_logo(){
+    echo '<style>
+    #login h1 a{
+        background: url('.get_template_directory_uri() . '/assets/images/logos/inhabitent-logo-text-dark.svg) no-repeat !important;
+        background-size: 300px 53px !important;
+        width: 300px !important;
+        height: 53px !important;
+    }
+   
+    #login .button.button-primary{
+        background: #248A83;
+
+    }
+    </style>
+        
+
+    ';
+}
+
+add_filter('login_headerurl', 'inhabitent_login_logo_url');
+function inhabitent_login_logo_url($url){
+    return home_url();
+}
+
+ add_filter('login_headertitle', 'inhabitent_login_title');
+    function inhabitent_login_title(){
+        return 'inhabitent';
+    }
