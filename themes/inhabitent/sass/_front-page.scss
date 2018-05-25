@@ -11,6 +11,12 @@
 	align-content: center;
 	
 }
+
+.content-container{
+	max-width: 1120px;
+	margin-left: auto;
+	margin-right: auto;
+
 .shop-stuff{
 	display: flex;
 	justify-content: space-evenly;
@@ -19,28 +25,48 @@
 	.section-title{
 		flex-basis: 100%;
 		text-align: center;
+		margin: 2.5rem;
 	}
-	.shop-stuff-box{
-		flex-basis: 23%;
-		border: 1px solid grey;
-		border-top: 4px solid grey;
-		text-align: center;
-		padding: 10px;
-	
-		.stuff-box-icon{
-			width: 70px;
-		}
 
+	.shop-stuff-box-set{
+		min-width: 1120px;
+		text-align: center;
+		display: flex;
+		justify-content: space-evenly;
+
+
+		.shop-stuff-box{
+			flex-basis: 23%;
+			border: 1px solid grey;
+			border-top: 4px solid grey;
+			text-align: center;
+			padding: 10px;
+			
 		
-         .btn{
-            background-color:#248a83;
-            color: white;
-            padding: 10px 15px;
-            text-decoration: none;
-            text-transform: uppercase;
+			.stuff-box-icon{
+				width: 70px;
+			}
+	
+			p{
+				
+				
+				.btn{
+					background-color:#248a83;
+					color: white;
+					padding: 0.8rem 1.5rem;
+					text-decoration: none;
+					text-transform: uppercase;
+					font-family: Novecento Sans Web,sans-serif;
+					font-size: 0.9rem;
+				}
+				
+			}
+			
+			 
 		}
-		
-	}
+	}	
+
+	
 }
 
 .inhabitent-journal-container{
@@ -50,6 +76,7 @@
 	.section-title{
 		flex-basis: 100%;
 		text-align: center;
+		margin: 2.5rem;
 	}
 
 	.set-of-article-boxes{
@@ -63,30 +90,51 @@
 	
 		.journal-article{
 			list-style: none;
-
-			border: 1px solid black;
+			border: 1px solid #e1e1e1;
 			flex-basis: 31.5%;
-			height: 350px;
-
+			
+			height: 400px;
+			
 			.journal-article-image{
-				height: 65%;
+				height: 55%;
 				background-color: green;
 					img{
 						height:100%;
 					}
 			}
 			.journal-article-info{
-				
+				height: 45%;
+				padding: 0.9rem;
 				border-top: 4px solid grey;
-				// padding: 10px;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+
+
 				
-					a{
-						background-color: white;
-						text-shadow: none;
-						box-shadow: none;
-						border-radius: 0px;
-						color: black;
-						border: 1px solid black;		
+					.journal-article-title{
+						color: #248a83;
+						font-size:1.3rem;
+						text-transform: uppercase;
+						font-family: Novecento Sans Web,sans-serif;
+						margin:0;
+						
+
+					}
+					.article-meta{
+						font-size:0.7rem;
+						margin:0;
+					}
+					
+					.btn-transparent{
+						padding: 0.4rem 1.2rem;
+						text-decoration: none;
+						text-transform: uppercase;
+						font-family: Novecento Sans Web,sans-serif;
+						font-size: 0.9rem;	
+						color: #404040;
+						border: 1px solid #404040;	
+						margin-right: auto;	
 					}
 				
 				
@@ -96,15 +144,15 @@
 	}
 
 }
+
 .adventures-container{
 	display: flex;
 	flex-wrap: wrap;
 	
-	
-
 	.section-title{
 		flex-basis: 100%;
 		text-align: center;
+		margin: 2.5rem;
 	}
 
 	.adventure-stories{
@@ -158,22 +206,21 @@
 	
 
 	}
-	#more-adventures-btn{
-		flex-basis: 100%;
-		padding:17px;
-
-		input{
-			background-color: #248a83;
-			text-shadow: none;
-			box-shadow: none;
-			border-radius: 0px;
-			color: white;
-			border: none;		
-						
-	}
+	.btn-more-adventures{
+		background-color:#248a83;
+					color: white;
+					padding: 0.8rem 1.5rem;
+					text-decoration: none;
+					text-transform: uppercase;
+					font-family: Novecento Sans Web,sans-serif;
+					font-size: 0.9rem;
+					width: 1120px;
+					margin-left: 1.2rem;
 	}
 	 
 }
-.main-navigation{
-	z-index: 10000000;
+
 }
+// .main-navigation{
+// 	z-index: 10000000;
+// }

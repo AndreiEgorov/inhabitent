@@ -71,4 +71,18 @@ big {
 	body{
 		line-height: 1.75rem;
 		font-size:16px;
+		font-family: 'Merriweather';
 	}
+
+.entry-title,
+.section-title{
+
+	h2{
+		font-family: Novecento, Sans Web,sans-serif;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		font-weight: 300;
+		font-size: 2rem;
+	}
+	
+}
