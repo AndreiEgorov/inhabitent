@@ -44,22 +44,11 @@ get_header(); ?>
 	</div><!-- .entry-content -->
 
 	
-</article><!-- #post-## -->
 
-
-
-
-
-
-
-
-            
-
-			<?php the_post_navigation(); ?>
 
 
 		<?php endwhile; // End of the loop. ?>
-
+		</article>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

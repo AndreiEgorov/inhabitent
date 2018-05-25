@@ -55,40 +55,38 @@ get_header(); ?>
 
 	</section>
 
+
+	<section class="inhabitent-journal-container">
 				
+			<div class="section-title">
+				<h2>INHABITENT JOURNAL</h2>
+			</div>
 
+		<?php
+			$args = array( 'post_type' => 'post', 'posts_per_page' =>3, 'order' => 'DESC' );
+			$product_posts = get_posts( $args ); // returns an array of posts
+			?>
+		<div class="set-of-article-boxes">				
+			<?php foreach ( $product_posts as $post ) : setup_postdata( $post ); ?>
+			<div class="journal-article" >
 
-				<div class="inhabitent-journal-container">
-				
-					<div class="section-title">
-						<h2>INHABITENT JOURNAL</h2>
-					</div>
-
-				<?php
-					$args = array( 'post_type' => 'post', 'posts_per_page' =>3, 'order' => 'DESC' );
-					$product_posts = get_posts( $args ); // returns an array of posts
-					?>
-				<div class="set-of-article-boxes">				
-					<?php foreach ( $product_posts as $post ) : setup_postdata( $post ); ?>
-					<div class="journal-article" >
-
-						<div class="journal-article-image">
-							<?php the_post_thumbnail(); ?>
-						</div>
-
-						<div class= "journal-article-info">
-							<p class="article-meta"><?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?></p> 			
-							<h2 class="journal-article-title"><?php the_title();?> </h2>
-							<a href="<?php the_permalink();?>" class="btn-transparent">READ ENTRY</a>
-						</div>	
-
-					</div>
-						<?php endforeach; wp_reset_postdata(); ?>
-					</div>
-
+				<div class="journal-article-image">
+					<?php the_post_thumbnail(); ?>
 				</div>
 
+				<div class= "journal-article-info">
+					<p class="article-meta"><?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?></p> 			
+					<h2 class="journal-article-title"><?php the_title();?> </h2>
+					<a href="<?php the_permalink();?>" class="btn-transparent">READ ENTRY</a>
+				</div>	
 
+			</div>
+				<?php endforeach; wp_reset_postdata(); ?>
+			</div>
+
+	</section>
+
+				
 
 				<div class="adventures-container">
 
