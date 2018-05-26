@@ -33,8 +33,11 @@
 						<!-- <p class="site-description"><?php bloginfo( 'description' ); ?></p> --> 
 					</div><!-- .site-branding -->
 
-					<div class="logo1">
+					<div class="white-logo">	
 						<img src="<?php echo get_template_directory_uri() ?>/assets/images/logos/inhabitent-logo-tent-white.svg"  alt="Inhabitent Logo" />
+					</div>
+					<div class="green-logo">
+						<img src="<?php echo get_template_directory_uri() ?>/assets/images/logos/inhabitent-logo-tent.svg"  alt="Inhabitent Logo" />
 					</div>
 
 					<nav id="site-navigation" class="main-navigation" role="navigation">
@@ -42,9 +45,9 @@
 				
 						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 
-						<form action="">
-							<input type="text" name="search" placeholder="TYPE AND HIT ENTER...">
-						</form>
+					
+						<?php get_search_form(); ?>
+
 					</nav><!-- #site-navigation -->
 
 				</div>

@@ -21,31 +21,48 @@
 				justify-content: space-evenly;
 
 				a{
-					color: white;
+					color: #248a83;
 				}
+			
 			}
 			
 		}
-		form{
+
+
+		.search-form{
 		
 			flex-basis: 35%;
+			.fa-search{
+				color: #248a83;
+			}
 		}
 	}
 
-	.logo1{
+	.white-logo,
+	.green-logo{
+		
 		flex-basis: 50%;
 		img{
 			max-width: 50px;
 		}
 	}
 	
-	
-
-
-	
-	.search-bar{
-		align-self: center;
+	.search-form fieldset{
+		// align-self: center;
+		width: 250px;
 
 	}
 
 }
+
+
+.home,
+.page-template-about{
+	.white-logo {
+		display: block;		
+	}
+	.green-logo{
+		display:none;
+	}
+}
+

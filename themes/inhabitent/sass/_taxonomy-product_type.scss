@@ -1,0 +1,29 @@
+
+.item-grid-small{
+    display:grid;
+    grid-template-columns: repeat(4, 22%);
+    grid-gap: 10px;
+
+    .item-image{
+        background-color: #e1e1e1;
+        height: 80%;
+
+        img{
+            object-fit: cover;
+            width: 100%;
+            height: 98%;
+        }
+    }
+}
+
+// body class
+.tax-product_type {
+
+
+}
+
+
+// find us page
+// .page-id-132 {
+
+// }
