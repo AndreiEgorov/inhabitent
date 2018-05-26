@@ -722,6 +722,34 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.site-header .white-logo {
+  display: none; }
+
+.site-header .green-logo {
+  display: block; }
+
+.site-header .main-navigation a {
+  color: #248a83; }
+
+.site-header .fa-search {
+  color: #248a83; }
+
+.home .site-header .white-logo,
+.page-template-about .site-header .white-logo {
+  display: block; }
+
+.home .site-header .green-logo,
+.page-template-about .site-header .green-logo {
+  display: none; }
+
+.home .site-header .main-navigation a,
+.page-template-about .site-header .main-navigation a {
+  color: white; }
+
+.home .site-header .fa-search,
+.page-template-about .site-header .fa-search {
+  color: white; }
+
 .header-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -755,13 +783,9 @@ object {
         -webkit-box-pack: space-evenly;
             -ms-flex-pack: space-evenly;
                 justify-content: space-evenly; }
-        .header-container .main-navigation .menu-main-menu-container .menu a {
-          color: #248a83; }
     .header-container .main-navigation .search-form {
       -ms-flex-preferred-size: 35%;
           flex-basis: 35%; }
-      .header-container .main-navigation .search-form .fa-search {
-        color: #248a83; }
   .header-container .white-logo,
   .header-container .green-logo {
     -ms-flex-preferred-size: 50%;
@@ -771,14 +795,6 @@ object {
       max-width: 50px; }
   .header-container .search-form fieldset {
     width: 250px; }
-
-.home .white-logo,
-.page-template-about .white-logo {
-  display: block; }
-
-.home .green-logo,
-.page-template-about .green-logo {
-  display: none; }
 
 .footer-container {
   background-image: url(../../assets/images/dark-wood.png);
@@ -1019,7 +1035,9 @@ object {
 
 .shop-content .content-container {
   padding: 3rem 0;
-  width: 1120px; }
+  width: 1120px;
+  margin-left: auto;
+  margin-right: auto; }
   .shop-content .content-container .shop {
     text-align: center; }
     .shop-content .content-container .shop h2 {

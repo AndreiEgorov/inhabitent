@@ -34,10 +34,10 @@
 					</div><!-- .site-branding -->
 
 					<div class="white-logo">	
-						<img src="<?php echo get_template_directory_uri() ?>/assets/images/logos/inhabitent-logo-tent-white.svg"  alt="Inhabitent Logo" />
+					<a href="<?php echo get_home_url()?>"><img src="<?php echo get_template_directory_uri() ?>/assets/images/logos/inhabitent-logo-tent-white.svg"  alt="Inhabitent Logo" /></a>
 					</div>
 					<div class="green-logo">
-						<img src="<?php echo get_template_directory_uri() ?>/assets/images/logos/inhabitent-logo-tent.svg"  alt="Inhabitent Logo" />
+					<a href="<?php echo get_home_url()?>"><img src="<?php echo get_template_directory_uri() ?>/assets/images/logos/inhabitent-logo-tent.svg"  alt="Inhabitent Logo" /></a>
 					</div>
 
 					<nav id="site-navigation" class="main-navigation" role="navigation">
@@ -55,3 +55,4 @@
 			</header><!-- #masthead -->
 
 			<div id="content" class="site-content">
+<a href="<?php get_home_url()?>"></a>
