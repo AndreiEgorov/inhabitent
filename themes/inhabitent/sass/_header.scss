@@ -1,6 +1,7 @@
 
 
 .site-header{
+	border-bottom: $solid-border;
 
 	.white-logo {
 		display: none;		
@@ -17,6 +18,7 @@
 	.fa-search{
 		color: #248a83;
 	}
+	
 }
 
 .home,
@@ -46,7 +48,7 @@
 	display:flex;
 	justify-content: space-between;
 	padding: 0 15px;
-	position: absolute;
+	// position: absolute;
 	width: 100%;
 
 	//nav and search bar

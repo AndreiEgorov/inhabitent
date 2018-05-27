@@ -1,29 +1,111 @@
+// body class
 
-.item-grid-small{
-    display:grid;
-    grid-template-columns: repeat(4, 22%);
-    grid-gap: 10px;
+.content-container{
+    width: 1120px;
+    margin-left:auto;
+    margin-right: auto;
+    padding: 3rem 0;
 
-    .item-image{
-        background-color: #e1e1e1;
-        height: 80%;
 
-        img{
-            object-fit: cover;
-            width: 100%;
-            height: 98%;
+    .page-header{
+        text-align:center;
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+        border-bottom: $dashed-border;
+        line-height: 1.25;
+    
+        .page-title{
+            font-family: Novecento Sans Web,sans-serif;
+            font-weight: bold;  
+            font-size: 2.5rem;
+            margin-top: 0;
+            
+        }
+        .taxonomy-description{
+            margin: 2rem 0;
+            // font-family: Merriweather Web,serif;
+            font-size: 1rem;
         }
     }
+
+    
+
+
+
+
+    .item-grid-small{
+        display:grid;
+        grid-template-columns: repeat(4, 23.4%);
+        grid-gap: 1.5rem;
+        justify-content: center;
+        margin-left: 0;
+        padding-left: 0;
+        list-style: none;
+
+        .shop-item{
+
+            border: $solid-border;
+            .item-image{
+                background-color: #e1e1e1;
+                height: 80%;
+    
+                img{
+                    object-fit: cover;
+                    width: 100%;
+                    height: 98%;
+                }
+            }
+    
+            .item-info{
+                display: flex;
+                font-size: 0.8rem;
+                font-family: Merriweather Web,serif;
+                font-weight: unset;
+                padding: 0 1rem;
+    
+                .item-name{
+                    white-space: nowrap;
+                    font-family: Merriweather Web,serif;
+                    font-weight: unset;
+    
+                    
+                }
+                span{
+                    flex-grow: 1;
+                    align-self: center;
+                    overflow:hidden;
+                }
+                .item-price{
+                    padding-left: 5px;
+                    font-family: Merriweather Web,serif;
+                    font-weight: unset;
+                      
+                }
+            }
+
+        }
+
+       
+    }
+
+    // .item-grid-small{
+    //     display:grid;
+    //     grid-template-columns: repeat(4, 22%);
+    //     grid-gap: 10px;
+
+    //     .item-image{
+    //         background-color: #e1e1e1;
+    //         height: 80%;
+
+    //         img{
+    //             object-fit: cover;
+    //             width: 100%;
+    //             height: 98%;
+    //         }
+    //     }
+    // }
+
+
 }
 
-// body class
-.tax-product_type {
 
-
-}
-
-
-// find us page
-// .page-id-132 {
-
-// }
