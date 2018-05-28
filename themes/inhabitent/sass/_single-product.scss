@@ -1,0 +1,72 @@
+.single-product{
+
+    .content-container{
+      
+        display: flex;
+        justify-content: space-between;
+
+        .product-image{
+            flex-basis: 48%;
+        }
+
+        .info-block{
+            flex-basis: 48%;
+
+            .entry-header{
+                color: #d99054;
+                text-transform: uppercase;
+
+                .entry-title{
+                    font-family: Novecento Sans Web,sans-serif;
+                    margin-top: 0;
+                }
+            }
+                .entry-content{
+                    .price{
+                        font-size: 1.5rem;
+                        font-family: Novecento Sans Web,sans-serif;
+                    }
+                }
+            .social-buttons{
+                display: flex;
+                justify-content: space-between;
+                width: 66%;
+            
+                a{
+                    text-decoration: none;
+                    
+                    .button{
+                        padding: 5px 26px;
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        font-family: Novecento Sans Web,sans-serif;
+                        font-size: 0.9rem;	
+                        color: #404040;
+                        border: 1px solid #404040;	
+                        margin-right: auto;	
+                        .fab{
+                            padding: 0 5px;
+                        }
+                    }
+                    .button:hover{
+                        color: white;
+                        background-color: #248a83;
+                        border-color: #248a83;
+                    }
+
+
+
+                }
+               
+                
+                
+            }
+
+        }
+    }
+
+
+
+
+
+} 

@@ -28,30 +28,37 @@ get_header(); ?>
 
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php if ( has_post_thumbnail() ) : ?>
-			<?php the_post_thumbnail( 'large' ); ?>
-		<?php endif; ?>
-
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-
+	<section class="content-container">
 		
+				<?php if ( has_post_thumbnail() ) : ?>
+		<div class="product-image">
+			<?php the_post_thumbnail( 'large' ); ?> 
+		</div>
+				<?php endif; ?>
 
-	<div class="entry-content">
-        <?php echo CFS()->get( 'price' ); ?>
-		<?php the_content(); ?>
-		
-	</div><!-- .entry-content -->
+		<div class="info-block">
+			<header class="entry-header">
+					<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+			</header>	
 
-	
+			<div class="entry-content">
+				<p class="price"> <?php echo CFS()->get( 'price' ); ?> </p>
+				<p class="product-description"> <?php the_content(); ?> </p>		
+			</div><!-- .entry-content -->
+			
+			<div class="social-buttons">
+				<a href=""> <p class="button"> <i class="fab fa-facebook-f"></i> LIKE </p></a>
+				<a href=""> <p class="button"> <i class="fab fa-twitter"></i> TWEET </p></a>
+				<a href=""> <p class="button"> <i class="fab fa-pinterest"></i> PIN </p></a>
+			</div>
+		</div>
 
+<?php endwhile; // End of the loop. ?>
 
-
-		<?php endwhile; // End of the loop. ?>
-		</article>
-		</main><!-- #main -->
-	</div><!-- #primary -->
-
+</article>
+				</main><!-- #main -->
+			<!-- #primary -->
+	</section>
 
 <?php get_footer(); ?>
 
