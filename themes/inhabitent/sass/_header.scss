@@ -14,10 +14,19 @@
 		a{
 			color: #248a83;
 		}
-	}	
-	.fa-search{
-		color: #248a83;
 	}
+					
+	.search-form{
+		border: none;
+		display: flex;
+		label{
+			order:2;
+		}
+		.fa-search{
+			color: #248a83;
+		}
+	}		
+	
 	
 }
 
@@ -25,6 +34,9 @@
 .page-template-about{
 
 	.site-header{
+		.header-container{
+			position: absolute;
+		}
 
 		.white-logo {
 			display: block;		
@@ -40,6 +52,40 @@
 		.fa-search{
 			color: white;
 		}
+		
+	}
+	.banner-stick{
+		position:fixed;
+		width:100%;
+		.header-container{
+			background-color: rgba(255, 255, 255, 0.85);
+			border-bottom: $solid-border;
+			
+			
+
+			.main-navigation{
+				.menu{
+					li{
+						a{
+							color: #248a83;
+						}
+					}
+					
+				}
+				.search-form{
+					
+						.fa-search{
+							color: #248a83;
+						}
+					
+					
+					
+				}
+			
+			}
+
+		}
+		
 	}
 	
 }
@@ -53,9 +99,9 @@
 
 	//nav and search bar
 	.main-navigation{
-	    flex-basis: 50%; 
+	    flex-basis: 60%; 
 		display: flex;
-		justify-content: space-between;
+		justify-content: flex-end;
 		align-items: center;
 
 		.menu-main-menu-container{
@@ -76,7 +122,10 @@
 
 
 		.search-form{
-			flex-basis: 35%;
+			flex-basis: 0%;
+			.search-field{
+				width: 200px;
+			}
 			
 		}
 	}
@@ -84,17 +133,15 @@
 	.white-logo,
 	.green-logo{
 		
-		flex-basis: 50%;
+		flex-basis: 40%;
 		img{
 			max-width: 50px;
 		}
 	}
 	
-	.search-form fieldset{
-		// align-self: center;
-		width: 250px;
-
-	}
+	// .search-form {
+		
+	// }
 
 }
 
