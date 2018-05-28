@@ -1,0 +1,47 @@
+.page-template-about{
+    .entry-header{
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .entry-title{
+            color: white;
+            font-size: 3rem;
+            text-transform: uppercase;
+            font-family: Novecento Sans Web,sans-serif;
+            letter-spacing: 2px;
+            
+        }
+
+    }
+    .entry-content{
+        width: 800px;
+        margin: 3rem auto;
+        
+        h2{
+            font-size: 2rem;
+            font-family: Novecento Sans Web,sans-serif;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            text-align: center
+        }
+        p{
+            span{
+                color: #404040;
+                font-family: Merriweather Web,serif;
+                font-size: 1rem;
+                line-height: 1.75;
+            }
+           
+            
+        }
+    }
+
+
+
+
+
+
+
+}

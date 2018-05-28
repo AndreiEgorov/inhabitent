@@ -9,6 +9,7 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
+        
 		<main id="main" class="site-main" role="main">
 		
 			<?php while ( have_posts() ) : the_post(); ?>
@@ -32,8 +33,9 @@ get_header(); ?>
                         echo $our_story_props['label'];
                         ?>
                     </h2>
-                    <?php echo CFS()->get( 'price' ); ?>
-                    <?php echo CFS()->get('our_story')?>
+                 
+                   <?php echo CFS()->get('our_story')?>
+                   
 
                     <h2>
                     <?php
@@ -42,8 +44,8 @@ get_header(); ?>
                         ?>
                     </h2>
                     
-                    <?php echo CFS()->get('our_team')?>
-
+                <?php echo CFS()->get('our_team')?>
+    
 
 
 

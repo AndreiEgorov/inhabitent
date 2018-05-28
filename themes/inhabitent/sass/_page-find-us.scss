@@ -1,4 +1,4 @@
-.content-area{
+.main-content{
     line-height: 1.25;
     width: 1120px;
     margin-right: auto;
@@ -95,78 +95,78 @@
 
     .sidebar{
         
-        
-            flex-basis: 28%;
-            padding-top: 4rem;
-            padding-left: 5%;
-            border-left: $solid-border;
-            line-height: 1.75;
+    
+        flex-basis: 28%;
+        padding-top: 4rem;
+        padding-left: 5%;
+        border-left: $solid-border;
+        line-height: 1.75;
 
-            .widget{
-                margin-bottom:3rem;
+        .widget{
+            margin-bottom:3rem;
 
-                .widget-title{
-                    font-size: 1.5rem;
-                    font-family: Novecento Sans Web,sans-serif;
-                    letter-spacing: 2px;
-                    text-transform: uppercase;
-                }
-            
-                    
-                p{
-                    display: flex;
-                    i{
-                        line-height: 1.5;
-                    }
-
-                    a{
-                        text-decoration: none;
-                       
-                        margin-left: 10px;
-                        font-size: 1.1rem;
-                        color: inherit;
-                        .colored{
-                            color:#248a83;
-                        }
-                    }
-                }
-             }   
-             
-            .tent-biz-hours-class{
-                font-size: 1.1rem;
-                span{
-                    font-weight: bold;
-                    padding-right: 5px;
-
-                }
-
-            } 
-            .widget_archive{
-                ul{
-                    list-style: none;
-                   margin-left: 0;
-                   padding-left: 0;
-                   a{
-                    text-decoration: none;
-                    font-size: 1.1rem;
-                    color:#248a83;
-                   }
-                }
+            .widget-title{
+                font-size: 1.5rem;
+                font-family: Novecento Sans Web,sans-serif;
+                letter-spacing: 2px;
+                text-transform: uppercase;
             }
         
+                
+            p{
+                display: flex;
+                i{
+                    line-height: 1.5;
+                }
+
+                a{
+                    text-decoration: none;
+                    
+                    margin-left: 10px;
+                    font-size: 1.1rem;
+                    color: inherit;
+                    .colored{
+                        color:#248a83;
+                    }
+                }
+            }
+            }   
+            
+        .tent-biz-hours-class{
+            font-size: 1.1rem;
+            span{
+                font-weight: bold;
+                padding-right: 5px;
+
+            }
+
+        } 
+        .widget_archive{
+            ul{
+                list-style: none;
+                margin-left: 0;
+                padding-left: 0;
+                a{
+                text-decoration: none;
+                font-size: 1.1rem;
+                color:#248a83;
+                }
+            }
+        }
+    
         
         
     }
 }
 
 
-h1  {
+// h1  {
     
 
     
-    font-size: 12px;
-    font-size: .75rem;
-    line-height: 1;
-    padding: .6rem 1rem .4rem;
+//     font-size: 12px;
+//     font-size: .75rem;
+//     line-height: 1;
+//     padding: .6rem 1rem .4rem;
    
-}
+// }
