@@ -10,7 +10,7 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 		
-			<div class="home-page">
+			<section class="home-page">
 
 				<div class="journal-content">
 					<?php if ( have_posts() ) : ?>
@@ -64,8 +64,8 @@ get_header(); ?>
 
 				
 
-				
-			</div>
+
+			</section>
 				
 
 		</main><!-- #main -->

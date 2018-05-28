@@ -1460,3 +1460,240 @@ object {
         text-decoration: none;
         font-size: 1.1rem;
         color: #248a83; }
+
+.single-page {
+  line-height: 1.25;
+  width: 1120px;
+  margin-right: auto;
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .single-page .single-post {
+    -ms-flex-preferred-size: 72%;
+        flex-basis: 72%; }
+    .single-page .single-post .entry-header {
+      position: relative; }
+      .single-page .single-post .entry-header img {
+        width: 92%; }
+      .single-page .single-post .entry-header .entry-title {
+        font-family: Novecento Sans Web,sans-serif;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        font-size: 2.2rem;
+        background-color: #248a83;
+        width: 75%;
+        width: 555px;
+        position: absolute;
+        top: 0rem;
+        padding: 1.3rem; }
+        .single-page .single-post .entry-header .entry-title a {
+          color: white;
+          text-decoration: none; }
+        .single-page .single-post .entry-header .entry-title p {
+          width: 92%; }
+      .single-page .single-post .entry-header .entry-meta {
+        font-family: Novecento Sans Web,sans-serif;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        font-size: 1rem;
+        background-color: #248a83;
+        width: 75%;
+        width: 555px;
+        position: absolute;
+        bottom: 0.3rem;
+        padding: 0.6rem 1rem;
+        right: 4.05rem; }
+        .single-page .single-post .entry-header .entry-meta span {
+          color: white;
+          text-decoration: none; }
+    .single-page .single-post .entry-content {
+      margin-bottom: 5rem; }
+      .single-page .single-post .entry-content .p1 {
+        width: 92%;
+        font-size: 1rem;
+        line-height: 1.75; }
+    .single-page .single-post .entry-footer .tags-links,
+    .single-page .single-post .entry-footer .cat-links {
+      display: inline-block;
+      font-family: Novecento Sans Web,sans-serif;
+      text-transform: uppercase;
+      padding-right: 15px; }
+      .single-page .single-post .entry-footer .tags-links a,
+      .single-page .single-post .entry-footer .cat-links a {
+        text-decoration: none;
+        color: #248a83; }
+    .single-page .single-post .social-buttons {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      width: 44%; }
+      .single-page .single-post .social-buttons a {
+        text-decoration: none; }
+        .single-page .single-post .social-buttons a .button {
+          padding: 12px 26px;
+          text-decoration: none;
+          text-transform: uppercase;
+          font-family: Novecento Sans Web,sans-serif;
+          font-size: 0.9rem;
+          color: #404040;
+          border: 1px solid #404040;
+          margin-right: auto; }
+          .single-page .single-post .social-buttons a .button .fab {
+            padding: 0 5px; }
+        .single-page .single-post .social-buttons a .button:hover {
+          color: white;
+          background-color: #248a83;
+          border-color: #248a83; }
+    .single-page .single-post .comment-respond .comment-reply-title {
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-size: 2rem;
+      font-family: Novecento Sans Web,sans-serif; }
+    .single-page .single-post .comment-respond .comment-form {
+      width: 92%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      .single-page .single-post .comment-respond .comment-form .comment-form-comment {
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%; }
+        .single-page .single-post .comment-respond .comment-form .comment-form-comment label {
+          font-size: 16px;
+          font-size: 1.1rem;
+          line-height: 1.75;
+          text-transform: uppercase;
+          font-family: Novecento Sans Web,sans-serif; }
+        .single-page .single-post .comment-respond .comment-form .comment-form-comment textarea {
+          color: #666;
+          background: #f4f4f4;
+          border-radius: 0;
+          border: 1px solid #e1e1e1;
+          line-height: 1.75;
+          font-size: 1.2rem;
+          margin-top: 0.7rem; }
+      .single-page .single-post .comment-respond .comment-form .comment-form-url,
+      .single-page .single-post .comment-respond .comment-form .comment-form-email,
+      .single-page .single-post .comment-respond .comment-form .comment-form-author {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; }
+        .single-page .single-post .comment-respond .comment-form .comment-form-url label,
+        .single-page .single-post .comment-respond .comment-form .comment-form-email label,
+        .single-page .single-post .comment-respond .comment-form .comment-form-author label {
+          font-family: Novecento Sans Web,sans-serif;
+          font-size: 1.2rem;
+          text-transform: uppercase; }
+          .single-page .single-post .comment-respond .comment-form .comment-form-url label span,
+          .single-page .single-post .comment-respond .comment-form .comment-form-email label span,
+          .single-page .single-post .comment-respond .comment-form .comment-form-author label span {
+            color: red; }
+        .single-page .single-post .comment-respond .comment-form .comment-form-url input,
+        .single-page .single-post .comment-respond .comment-form .comment-form-email input,
+        .single-page .single-post .comment-respond .comment-form .comment-form-author input {
+          color: #666;
+          background: #f4f4f4;
+          border-radius: 0;
+          border: 1px solid #e1e1e1;
+          line-height: 1.75;
+          font-size: 1.2rem;
+          margin-top: 0.7rem; }
+      .single-page .single-post .comment-respond .comment-form .comment-form-email,
+      .single-page .single-post .comment-respond .comment-form .comment-form-author {
+        -ms-flex-preferred-size: 49%;
+            flex-basis: 49%; }
+      .single-page .single-post .comment-respond .comment-form .comment-form-url {
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%; }
+      .single-page .single-post .comment-respond .comment-form .comment-form-cookies-consent {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        color: #2f1339;
+        line-height: 1.75;
+        font-size: 1.1rem;
+        margin-bottom: .5rem;
+        text-transform: uppercase; }
+        .single-page .single-post .comment-respond .comment-form .comment-form-cookies-consent input {
+          margin-bottom: 10px;
+          width: 20px;
+          height: 20px; }
+      .single-page .single-post .comment-respond .comment-form .form-submit {
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%; }
+        .single-page .single-post .comment-respond .comment-form .form-submit .submit {
+          text-shadow: none;
+          padding: 5px 26px;
+          border-radius: 0;
+          background: #248a83;
+          -webkit-box-shadow: none;
+                  box-shadow: none;
+          line-height: 1.75;
+          color: white;
+          text-transform: uppercase;
+          font-family: Novecento Sans Web,sans-serif;
+          font-size: 0.9rem;
+          border: 1px solid #248a83;
+          margin-right: auto; }
+          .single-page .single-post .comment-respond .comment-form .form-submit .submit:hover {
+            background-color: #19625d;
+            border-color: #19625d; }
+  .single-page .sidebar {
+    -ms-flex-preferred-size: 28%;
+        flex-basis: 28%;
+    padding-top: 4rem;
+    padding-left: 5%;
+    border-left: 1px solid #e1e1e1;
+    line-height: 1.75; }
+    .single-page .sidebar .widget {
+      margin-bottom: 3rem; }
+      .single-page .sidebar .widget .widget-title {
+        font-size: 1.5rem;
+        font-family: Novecento Sans Web,sans-serif;
+        letter-spacing: 2px;
+        text-transform: uppercase; }
+      .single-page .sidebar .widget p {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+        .single-page .sidebar .widget p i {
+          line-height: 1.5; }
+        .single-page .sidebar .widget p a {
+          text-decoration: none;
+          margin-left: 10px;
+          font-size: 1.1rem;
+          color: inherit; }
+          .single-page .sidebar .widget p a .colored {
+            color: #248a83; }
+    .single-page .sidebar .tent-biz-hours-class {
+      font-size: 1.1rem; }
+      .single-page .sidebar .tent-biz-hours-class span {
+        font-weight: bold;
+        padding-right: 5px; }
+    .single-page .sidebar .widget_archive ul {
+      list-style: none;
+      margin-left: 0;
+      padding-left: 0; }
+      .single-page .sidebar .widget_archive ul a {
+        text-decoration: none;
+        font-size: 1.1rem;
+        color: #248a83; }
