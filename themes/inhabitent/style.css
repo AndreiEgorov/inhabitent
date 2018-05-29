@@ -730,6 +730,8 @@ object {
     display: block; }
   .site-header .main-navigation a {
     color: #248a83; }
+    .site-header .main-navigation a:hover {
+      color: #2f1339; }
   .site-header .search-form {
     border: none;
     display: -webkit-box;
@@ -741,6 +743,8 @@ object {
               order: 2; }
     .site-header .search-form .fa-search {
       color: #248a83; }
+      .site-header .search-form .fa-search:hover {
+        color: #2f1339; }
 
 .home .site-header .header-container,
 .page-template-about .site-header .header-container {
@@ -757,10 +761,16 @@ object {
 .home .site-header .main-navigation a,
 .page-template-about .site-header .main-navigation a {
   color: white; }
+  .home .site-header .main-navigation a:hover,
+  .page-template-about .site-header .main-navigation a:hover {
+    color: #f0e4d1; }
 
 .home .site-header .fa-search,
 .page-template-about .site-header .fa-search {
   color: white; }
+  .home .site-header .fa-search:hover,
+  .page-template-about .site-header .fa-search:hover {
+    color: #f0e4d1; }
 
 .home .banner-stick,
 .page-template-about .banner-stick {
@@ -778,44 +788,54 @@ object {
       color: #248a83; }
 
 .header-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 0 15px;
   width: 100%; }
-  .header-container .main-navigation {
-    -ms-flex-preferred-size: 60%;
-        flex-basis: 60%;
+  .header-container .menu-container {
+    width: 1120px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
-    .header-container .main-navigation .menu-main-menu-container {
-      -ms-flex-preferred-size: 65%;
-          flex-basis: 65%; }
-      .header-container .main-navigation .menu-main-menu-container .menu {
-        text-transform: uppercase;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: space-evenly;
-            -ms-flex-pack: space-evenly;
-                justify-content: space-evenly; }
-  .header-container .white-logo,
-  .header-container .green-logo {
-    -ms-flex-preferred-size: 40%;
-        flex-basis: 40%; }
-    .header-container .white-logo img,
-    .header-container .green-logo img {
-      max-width: 50px; }
+    margin-left: auto;
+    margin-right: auto; }
+    .header-container .menu-container .main-navigation {
+      -ms-flex-preferred-size: 60%;
+          flex-basis: 60%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .header-container .menu-container .main-navigation .menu-main-menu-container {
+        -ms-flex-preferred-size: 65%;
+            flex-basis: 65%; }
+        .header-container .menu-container .main-navigation .menu-main-menu-container .menu {
+          text-transform: uppercase;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: space-evenly;
+              -ms-flex-pack: space-evenly;
+                  justify-content: space-evenly;
+          font-family: Novecento Sans Web,sans-serif; }
+      .header-container .menu-container .main-navigation .search-form .search-submit {
+        border: none;
+        background: transparent;
+        -webkit-box-shadow: none;
+                box-shadow: none;
+        font-size: 1rem; }
+    .header-container .menu-container .white-logo,
+    .header-container .menu-container .green-logo {
+      -ms-flex-preferred-size: 40%;
+          flex-basis: 40%; }
+      .header-container .menu-container .white-logo img,
+      .header-container .menu-container .green-logo img {
+        max-width: 50px; }
 
 .footer-container {
   background-image: url(../../assets/images/dark-wood.png);
@@ -834,6 +854,8 @@ object {
     .footer-container .contact-info a {
       text-decoration: none;
       color: white; }
+      .footer-container .contact-info a:hover {
+        text-decoration: underline; }
     .footer-container .contact-info .fa-icons {
       font-size: 1.2rem;
       letter-spacing: 2px; }
@@ -870,8 +892,9 @@ object {
       margin-top: 3rem; }
 
 .home .home-banner {
-  background-image: url("../../assets/images/home-hero.jpg");
-  background-size: cover;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../../assets/images/home-hero.jpg");
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), url("../../assets/images/home-hero.jpg");
+  background-size: cover, cover;
   background-position: center;
   height: 100vh;
   display: -webkit-box;
@@ -913,20 +936,24 @@ object {
       .home .content-container .shop-stuff .shop-stuff-box-set .shop-stuff-box {
         -ms-flex-preferred-size: 23%;
             flex-basis: 23%;
-        border: 1px solid grey;
-        border-top: 4px solid grey;
+        border: 1px solid #e1e1e1;
+        border-top: 5px solid #e1e1e1;
         text-align: center;
         padding: 10px; }
+        .home .content-container .shop-stuff .shop-stuff-box-set .shop-stuff-box:hover {
+          border-color: #d99054; }
         .home .content-container .shop-stuff .shop-stuff-box-set .shop-stuff-box .stuff-box-icon {
           width: 70px; }
         .home .content-container .shop-stuff .shop-stuff-box-set .shop-stuff-box p .btn {
-          background-color: #248a83;
+          background-color: #248A83;
           color: white;
           padding: 0.8rem 1.5rem;
           text-decoration: none;
           text-transform: uppercase;
           font-family: Novecento Sans Web,sans-serif;
           font-size: 0.9rem; }
+          .home .content-container .shop-stuff .shop-stuff-box-set .shop-stuff-box p .btn:hover {
+            background-color: #19625d; }
   .home .content-container .inhabitent-journal-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -992,6 +1019,10 @@ object {
             color: #404040;
             border: 1px solid #404040;
             margin-right: auto; }
+            .home .content-container .inhabitent-journal-container .set-of-article-boxes .journal-article .journal-article-info .btn-transparent:hover {
+              background-color: #248A83;
+              color: white;
+              border-color: #248A83; }
   .home .content-container .adventures-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1020,7 +1051,9 @@ object {
         grid-column: 1/3;
         grid-row: 1/3;
         position: relative;
-        color: white; }
+        color: white;
+        background: rgba(0, 0, 0, 0.35);
+        background-size: cover; }
         .home .content-container .adventures-container .adventure-stories .journal-article:nth-child(1) img {
           -o-object-fit: cover;
              object-fit: cover;
@@ -1035,6 +1068,8 @@ object {
             text-transform: none;
             font-size: 3rem;
             line-height: 1.25; }
+            .home .content-container .adventures-container .adventure-stories .journal-article:nth-child(1) .journal-article-info .journal-article-title:hover {
+              color: #f0e4d1; }
           .home .content-container .adventures-container .adventure-stories .journal-article:nth-child(1) .journal-article-info .btn-transparent {
             text-decoration: none;
             background-color: transparent;
@@ -1069,6 +1104,8 @@ object {
             text-transform: none;
             font-size: 2rem;
             line-height: 1.25; }
+            .home .content-container .adventures-container .adventure-stories .journal-article:nth-child(2) .journal-article-info .journal-article-title:hover {
+              color: #f0e4d1; }
           .home .content-container .adventures-container .adventure-stories .journal-article:nth-child(2) .journal-article-info .btn-transparent {
             text-decoration: none;
             background-color: transparent;
@@ -1103,6 +1140,8 @@ object {
             text-transform: none;
             font-size: 1.5rem;
             line-height: 1.25; }
+            .home .content-container .adventures-container .adventure-stories .journal-article:nth-child(3) .journal-article-info .journal-article-title:hover {
+              color: #f0e4d1; }
           .home .content-container .adventures-container .adventure-stories .journal-article:nth-child(3) .journal-article-info .btn-transparent {
             text-decoration: none;
             background-color: transparent;
@@ -1137,6 +1176,8 @@ object {
             text-transform: none;
             font-size: 1.5rem;
             line-height: 1.25; }
+            .home .content-container .adventures-container .adventure-stories .journal-article:nth-child(4) .journal-article-info .journal-article-title:hover {
+              color: #f0e4d1; }
           .home .content-container .adventures-container .adventure-stories .journal-article:nth-child(4) .journal-article-info .btn-transparent {
             text-decoration: none;
             background-color: transparent;
@@ -1631,7 +1672,8 @@ object {
         width: 555px;
         position: absolute;
         top: 0rem;
-        padding: 1.3rem; }
+        padding: 1.3rem;
+        color: white; }
         .single-page .single-post .entry-header .entry-title a {
           color: white;
           text-decoration: none; }
@@ -1652,6 +1694,9 @@ object {
         .single-page .single-post .entry-header .entry-meta span {
           color: white;
           text-decoration: none; }
+          .single-page .single-post .entry-header .entry-meta span a {
+            color: white;
+            text-decoration: none; }
     .single-page .single-post .entry-content {
       margin-bottom: 5rem; }
       .single-page .single-post .entry-content .p1 {
@@ -1693,6 +1738,40 @@ object {
           color: white;
           background-color: #248a83;
           border-color: #248a83; }
+    .single-page .single-post .comments-title {
+      color: #2f1339;
+      font-size: 2.1rem;
+      margin-bottom: 1.5rem;
+      font-family: Novecento,sans-serif;
+      text-transform: uppercase; }
+    .single-page .single-post .comment-list {
+      margin-left: 0;
+      padding-left: 0; }
+      .single-page .single-post .comment-list .bypostauthor .comment-body {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        margin-bottom: 4rem;
+        border-bottom: 1px solid #e1e1e1;
+        padding-bottom: 2rem;
+        width: 90%; }
+        .single-page .single-post .comment-list .bypostauthor .comment-body .comment-author-avatar img {
+          border-radius: 50%; }
+        .single-page .single-post .comment-list .bypostauthor .comment-body .comment-content {
+          padding-left: 1.5rem; }
+          .single-page .single-post .comment-list .bypostauthor .comment-body .comment-content .comment-meta {
+            margin-bottom: 2rem; }
+            .single-page .single-post .comment-list .bypostauthor .comment-body .comment-content .comment-meta a {
+              color: #248A83;
+              text-decoration: none; }
+            .single-page .single-post .comment-list .bypostauthor .comment-body .comment-content .comment-meta .fn {
+              font-weight: bold;
+              font-family: Merriweather Web,serif;
+              font-style: normal;
+              font-size: 1.2rem; }
+          .single-page .single-post .comment-list .bypostauthor .comment-body .comment-content .reply a {
+            text-decoration: none;
+            color: #248A83; }
     .single-page .single-post .comment-respond .comment-reply-title {
       letter-spacing: 2px;
       text-transform: uppercase;
@@ -2055,6 +2134,118 @@ object {
       margin-left: 0;
       padding-left: 0; }
       .page404-content .sidebar .widget_archive ul a {
+        text-decoration: none;
+        font-size: 1.1rem;
+        color: #248a83; }
+
+.archive-page {
+  line-height: 1.25;
+  width: 1120px;
+  margin-right: auto;
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .archive-page .archive-page-content {
+    -ms-flex-preferred-size: 72%;
+        flex-basis: 72%; }
+    .archive-page .archive-page-content .entry-header {
+      position: relative; }
+      .archive-page .archive-page-content .entry-header img {
+        width: 92%; }
+      .archive-page .archive-page-content .entry-header .entry-title {
+        font-family: Novecento Sans Web,sans-serif;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        font-size: 2.2rem;
+        background-color: #248a83;
+        width: 75%;
+        width: 555px;
+        position: absolute;
+        top: 0rem;
+        padding: 1.3rem; }
+        .archive-page .archive-page-content .entry-header .entry-title a {
+          color: white;
+          text-decoration: none; }
+        .archive-page .archive-page-content .entry-header .entry-title p {
+          width: 92%; }
+      .archive-page .archive-page-content .entry-header .entry-meta {
+        font-family: Novecento Sans Web,sans-serif;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        font-size: 1rem;
+        background-color: #248a83;
+        width: 75%;
+        width: 555px;
+        position: absolute;
+        bottom: 0.3rem;
+        padding: 0.6rem 1rem;
+        right: 4.05rem; }
+        .archive-page .archive-page-content .entry-header .entry-meta span {
+          color: white;
+          text-decoration: none; }
+          .archive-page .archive-page-content .entry-header .entry-meta span .comments-link {
+            color: white;
+            text-decoration: none; }
+    .archive-page .archive-page-content .entry-content {
+      margin-bottom: 5rem; }
+      .archive-page .archive-page-content .entry-content .p1 {
+        width: 92%;
+        font-size: 1rem;
+        line-height: 1.75; }
+      .archive-page .archive-page-content .entry-content a {
+        border: 1px solid #e1e1e1;
+        background-color: transparent;
+        color: black;
+        padding: .8rem 1.5rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: Novecento Sans Web,sans-serif;
+        font-size: .9rem; }
+      .archive-page .archive-page-content .entry-content a:hover {
+        border-color: #248a83;
+        background-color: #248a83;
+        color: white; }
+  .archive-page .sidebar {
+    -ms-flex-preferred-size: 28%;
+        flex-basis: 28%;
+    padding-top: 4rem;
+    padding-left: 5%;
+    border-left: 1px solid #e1e1e1;
+    line-height: 1.75; }
+    .archive-page .sidebar .widget {
+      margin-bottom: 3rem; }
+      .archive-page .sidebar .widget .widget-title {
+        font-size: 1.5rem;
+        font-family: Novecento Sans Web,sans-serif;
+        letter-spacing: 2px;
+        text-transform: uppercase; }
+      .archive-page .sidebar .widget p {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+        .archive-page .sidebar .widget p i {
+          line-height: 1.5; }
+        .archive-page .sidebar .widget p a {
+          text-decoration: none;
+          margin-left: 10px;
+          font-size: 1.1rem;
+          color: inherit; }
+          .archive-page .sidebar .widget p a .colored {
+            color: #248a83; }
+    .archive-page .sidebar .tent-biz-hours-class {
+      font-size: 1.1rem; }
+      .archive-page .sidebar .tent-biz-hours-class span {
+        font-weight: bold;
+        padding-right: 5px; }
+    .archive-page .sidebar .widget_archive ul {
+      list-style: none;
+      margin-left: 0;
+      padding-left: 0; }
+      .archive-page .sidebar .widget_archive ul a {
         text-decoration: none;
         font-size: 1.1rem;
         color: #248a83; }

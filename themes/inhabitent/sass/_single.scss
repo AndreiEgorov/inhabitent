@@ -29,6 +29,7 @@
                 position: absolute;
                 top: 0rem;
                 padding: 1.3rem;
+                color: white;
                 a{
                     color: white;
                     text-decoration: none; 
@@ -53,6 +54,10 @@
                 span{
                     color: white;
                     text-decoration: none; 
+                    a{
+                        color: white;
+                    text-decoration: none; 
+                    }
                 }  
             }            
         }
@@ -66,22 +71,7 @@
                 font-size: 1rem;
                 line-height: 1.75;
             }  
-            // a{  
-            //     border: $solid-border;
-            //     background-color: transparent;
-            //     color: black;
-            //     padding: .8rem 1.5rem;
-            //     text-decoration: none;
-            //     text-transform: uppercase;
-            //     font-family: Novecento Sans Web,sans-serif;
-            //     font-size: .9rem;
-
-            // }
-            // a:hover{
-            //     border-color: #248a83;
-            //     background-color: #248a83;
-            //     color: white;
-            // }
+           
         }
         .entry-footer{
             .tags-links,
@@ -126,6 +116,84 @@
                 }
             }          
         }  
+
+
+        .comments-title{
+            color: $brand_purple;
+            font-size: 2.1rem;
+            margin-bottom: 1.5rem;
+            font-family: Novecento,sans-serif;
+            text-transform:uppercase;
+        }
+        .comment-list{
+            margin-left: 0;
+            padding-left:0;
+            .bypostauthor{
+                .comment-body{
+                    display:flex;
+                    margin-bottom: 4rem;
+                    border-bottom: $solid-border;
+                    padding-bottom: 2rem;
+                    width: 90%;
+                    .comment-author-avatar{
+                       
+                        
+                        img{
+                            border-radius: 50%
+                        }
+
+                    }
+                    .comment-content{
+                        padding-left:1.5rem;
+                        .comment-meta{
+                            margin-bottom: 2rem;
+                            a{
+                                color: $brand_green;
+                                text-decoration: none;
+                            }
+                            .fn{
+                                font-weight: bold;
+                                font-family: Merriweather Web,serif;
+                                font-style: normal;
+                                font-size: 1.2rem;
+                            }
+
+                            
+                        }
+                        p{
+                           
+                        }
+                        .reply{
+                            a{
+                                text-decoration: none;
+                                color: $brand_green;
+                            }
+                            
+                        }
+                    }
+                }
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         .comment-respond{
 

@@ -2,7 +2,7 @@
 /**
  * The template for displaying archive pages.
  *
- * @package RED_Starter_Theme
+ * @package Inhabitent_Theme
  */
 ?>	
 
@@ -23,31 +23,9 @@
 						<h2><?php the_archive_title()?></h2>
 					</div>
 
-					<ul class="product-categories">
-							<?php
-							$terms = get_terms(array(
-								'taxonomy' => "product_type",
-								'hide_empty' => 0,
-							));
-							//d($terms);
-							if(!empty($terms) && ! is_wp_error( $terms )) :
-							?>
-
-							<?php foreach ( $terms as $term ) : ?>
-
-									<li>
-										<a href="<?php echo get_term_link( $term ); ?>" class="kind-of-category"> <?php echo $term->name; ?> </a>
-									</li>
-
-
-								<?php endforeach; ?>	
-								
-							<?php endif; ?>	
-					</ul>
-
 	<!-- fill up the grid with items -->
 					<?php
-						$args = array( 'post_type' => 'product', 'posts_per_page' =>16, 'order' => 'ASC' );
+						$args = array( 'post_type' => 'adventures', 'posts_per_page' =>16, 'order' => 'ASC' );
 						$product_posts = get_posts( $args ); // returns an array of posts
 						?>
 					<div class="item-grid">	

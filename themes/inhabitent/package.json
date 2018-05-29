@@ -1,7 +1,7 @@
 {
-  "name": "redstarter",
+  "name": "inhabitent",
   "version": "1.0.0",
-  "description": "A starter theme for RED students, based on Underscores.",
+  "description": "A theme for those who likes outdoors.",
   "main": "gulpfile.js",
   "dependencies": {},
   "devDependencies": {
@@ -25,7 +25,7 @@
     "type": "git",
     "url": "git+https://github.com/redacademy/redstarter.git"
   },
-  "author": "mandiwise",
+  "author": "Andrei Egorov",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/redacademy/redstarter/issues"

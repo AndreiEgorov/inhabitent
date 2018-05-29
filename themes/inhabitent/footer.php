@@ -2,7 +2,7 @@
 /**
  * The template for displaying the footer.
  *
- * @package RED_Starter_Theme
+ * @package Inhabitent_Theme
  */
 
 ?>
@@ -24,10 +24,10 @@
 
 					<div class="business-hours block">
 						<h3>BUSINESS HOURS</h3>
-						<p>Monday-Friday: 9am to 5pm</p>
-						<p>Saturday: 10am to 2pm</p>
-						<p>Sunday: Closed</p>
-
+						<p><strong>Monday-Friday:</strong> 9am to 5pm</p>
+						<p><strong>Saturday:</strong> 10am to 2pm</p>
+						<p><strong>Sunday:</strong> Closed</p>
+				
 					</div>
 
 					<div class="logo3 block">
