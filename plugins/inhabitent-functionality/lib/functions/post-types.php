@@ -124,7 +124,7 @@ function adventures_post_type() {
 		'capability_type'       => 'page',
 		'show_in_rest'          => true,
 	);
-	register_post_type( 'Adventures', $args );
+	register_post_type( 'adventures', $args );
 
 }
 add_action( 'init', 'adventures_post_type', 0 );

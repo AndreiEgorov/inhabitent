@@ -809,11 +809,6 @@ object {
         -webkit-box-pack: space-evenly;
             -ms-flex-pack: space-evenly;
                 justify-content: space-evenly; }
-    .header-container .main-navigation .search-form {
-      -ms-flex-preferred-size: 0%;
-          flex-basis: 0%; }
-      .header-container .main-navigation .search-form .search-field {
-        width: 200px; }
   .header-container .white-logo,
   .header-container .green-logo {
     -ms-flex-preferred-size: 40%;
@@ -1018,43 +1013,161 @@ object {
       -ms-flex-preferred-size: 100%;
           flex-basis: 100%;
       display: grid;
-      grid-template-columns: repeat(4, 23%);
+      grid-template-columns: 23% 23% 23% 23%;
       grid-template-rows: 250px 250px;
       gap: 17px; }
-      .home .content-container .adventures-container .adventure-stories .box1 {
+      .home .content-container .adventures-container .adventure-stories .journal-article:nth-child(1) {
         grid-column: 1/3;
         grid-row: 1/3;
-        background-color: greenyellow; }
-      .home .content-container .adventures-container .adventure-stories .box2 {
+        position: relative;
+        color: white; }
+        .home .content-container .adventures-container .adventure-stories .journal-article:nth-child(1) img {
+          -o-object-fit: cover;
+             object-fit: cover;
+          height: 100%; }
+        .home .content-container .adventures-container .adventure-stories .journal-article:nth-child(1) .journal-article-info {
+          position: absolute;
+          top: 4rem;
+          padding: 1.5rem; }
+          .home .content-container .adventures-container .adventure-stories .journal-article:nth-child(1) .journal-article-info .journal-article-title {
+            font-family: Merriweather ,serif;
+            font-weight: 400;
+            text-transform: none;
+            font-size: 3rem;
+            line-height: 1.25; }
+          .home .content-container .adventures-container .adventure-stories .journal-article:nth-child(1) .journal-article-info .btn-transparent {
+            text-decoration: none;
+            background-color: transparent;
+            text-shadow: none;
+            -webkit-box-shadow: none;
+                    box-shadow: none;
+            border-radius: 0px;
+            color: white;
+            border: 1px solid white;
+            padding: 0.8rem 1.5rem;
+            font-family: Novecento Sans Web,sans-serif;
+            font-size: 0.9rem; }
+            .home .content-container .adventures-container .adventure-stories .journal-article:nth-child(1) .journal-article-info .btn-transparent:hover {
+              background-color: #248a83;
+              border-color: #248a83; }
+      .home .content-container .adventures-container .adventure-stories .journal-article:nth-child(2) {
         grid-column: 3/5;
         grid-row: 1/2;
-        background-color: lightgreen; }
-      .home .content-container .adventures-container .adventure-stories .box3 {
+        position: relative;
+        color: white; }
+        .home .content-container .adventures-container .adventure-stories .journal-article:nth-child(2) img {
+          -o-object-fit: cover;
+             object-fit: cover;
+          height: 100%; }
+        .home .content-container .adventures-container .adventure-stories .journal-article:nth-child(2) .journal-article-info {
+          position: absolute;
+          top: 0rem;
+          padding: 1.5rem; }
+          .home .content-container .adventures-container .adventure-stories .journal-article:nth-child(2) .journal-article-info .journal-article-title {
+            font-family: Merriweather ,serif;
+            font-weight: 400;
+            text-transform: none;
+            font-size: 2rem;
+            line-height: 1.25; }
+          .home .content-container .adventures-container .adventure-stories .journal-article:nth-child(2) .journal-article-info .btn-transparent {
+            text-decoration: none;
+            background-color: transparent;
+            text-shadow: none;
+            -webkit-box-shadow: none;
+                    box-shadow: none;
+            border-radius: 0px;
+            color: white;
+            border: 1px solid white;
+            padding: 0.8rem 1.5rem;
+            font-family: Novecento Sans Web,sans-serif;
+            font-size: 0.9rem; }
+            .home .content-container .adventures-container .adventure-stories .journal-article:nth-child(2) .journal-article-info .btn-transparent:hover {
+              background-color: #248a83;
+              border-color: #248a83; }
+      .home .content-container .adventures-container .adventure-stories .journal-article:nth-child(3) {
         grid-column: 3/4;
         grid-row: 2/3;
-        background-color: olive; }
-      .home .content-container .adventures-container .adventure-stories .box4 {
+        position: relative;
+        color: white; }
+        .home .content-container .adventures-container .adventure-stories .journal-article:nth-child(3) img {
+          -o-object-fit: cover;
+             object-fit: cover;
+          height: 100%; }
+        .home .content-container .adventures-container .adventure-stories .journal-article:nth-child(3) .journal-article-info {
+          position: absolute;
+          top: 0rem;
+          padding: 1.5rem; }
+          .home .content-container .adventures-container .adventure-stories .journal-article:nth-child(3) .journal-article-info .journal-article-title {
+            font-family: Merriweather ,serif;
+            font-weight: 400;
+            text-transform: none;
+            font-size: 1.5rem;
+            line-height: 1.25; }
+          .home .content-container .adventures-container .adventure-stories .journal-article:nth-child(3) .journal-article-info .btn-transparent {
+            text-decoration: none;
+            background-color: transparent;
+            text-shadow: none;
+            -webkit-box-shadow: none;
+                    box-shadow: none;
+            border-radius: 0px;
+            color: white;
+            border: 1px solid white;
+            padding: 0.8rem 1.5rem;
+            font-family: Novecento Sans Web,sans-serif;
+            font-size: 0.9rem; }
+            .home .content-container .adventures-container .adventure-stories .journal-article:nth-child(3) .journal-article-info .btn-transparent:hover {
+              background-color: #248a83;
+              border-color: #248a83; }
+      .home .content-container .adventures-container .adventure-stories .journal-article:nth-child(4) {
         grid-column: 4/5;
         grid-row: 2/3;
-        background-color: lawngreen; }
-      .home .content-container .adventures-container .adventure-stories form input {
-        background-color: transparent;
-        text-shadow: none;
-        -webkit-box-shadow: none;
-                box-shadow: none;
-        border-radius: 0px;
-        color: balck;
-        border: 1px solid black; }
-    .home .content-container .adventures-container .btn-more-adventures {
-      background-color: #248a83;
-      color: white;
-      padding: 0.8rem 1.5rem;
-      text-decoration: none;
-      text-transform: uppercase;
-      font-family: Novecento Sans Web,sans-serif;
-      font-size: 0.9rem;
-      width: 1120px;
-      margin-left: 1.2rem; }
+        position: relative;
+        color: white; }
+        .home .content-container .adventures-container .adventure-stories .journal-article:nth-child(4) img {
+          -o-object-fit: cover;
+             object-fit: cover;
+          height: 100%; }
+        .home .content-container .adventures-container .adventure-stories .journal-article:nth-child(4) .journal-article-info {
+          position: absolute;
+          top: 0rem;
+          padding: 1.5rem; }
+          .home .content-container .adventures-container .adventure-stories .journal-article:nth-child(4) .journal-article-info .journal-article-title {
+            font-family: Merriweather ,serif;
+            font-weight: 400;
+            text-transform: none;
+            font-size: 1.5rem;
+            line-height: 1.25; }
+          .home .content-container .adventures-container .adventure-stories .journal-article:nth-child(4) .journal-article-info .btn-transparent {
+            text-decoration: none;
+            background-color: transparent;
+            text-shadow: none;
+            -webkit-box-shadow: none;
+                    box-shadow: none;
+            border-radius: 0px;
+            color: white;
+            border: 1px solid white;
+            padding: 0.8rem 1.5rem;
+            font-family: Novecento Sans Web,sans-serif;
+            font-size: 0.9rem; }
+            .home .content-container .adventures-container .adventure-stories .journal-article:nth-child(4) .journal-article-info .btn-transparent:hover {
+              background-color: #248a83;
+              border-color: #248a83; }
+    .home .content-container .adventures-container p {
+      margin-top: 2rem; }
+      .home .content-container .adventures-container p .btn-more-adventures {
+        background-color: #248A70;
+        color: white;
+        padding: .75rem 1.5rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: Novecento Sans Web,sans-serif;
+        font-size: 1rem;
+        width: 1120px;
+        margin-left: 1.2rem;
+        margin-top: 4rem; }
+        .home .content-container .adventures-container p .btn-more-adventures:hover {
+          background: #19625d;
+          border-color: #19625d; }
 
 .shop-content .menu-item {
   color: #248a83; }
@@ -1220,7 +1333,8 @@ object {
         padding: 1rem 0;
         font-family: Novecento Sans Web,sans-serif;
         font-size: 2rem;
-        letter-spacing: 2px; }
+        letter-spacing: 2px;
+        text-transform: uppercase; }
       .main-content .site-main .entry-content p {
         line-height: 1.75; }
       .main-content .site-main .entry-content .wpcf7 h2 {
@@ -1722,6 +1836,225 @@ object {
       margin-left: 0;
       padding-left: 0; }
       .single-page .sidebar .widget_archive ul a {
+        text-decoration: none;
+        font-size: 1.1rem;
+        color: #248a83; }
+
+.search-page {
+  line-height: 1.25;
+  width: 1120px;
+  margin-right: auto;
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .search-page .search-content {
+    padding-top: 2rem;
+    padding-right: 5%;
+    -ms-flex-preferred-size: 72%;
+        flex-basis: 72%; }
+    .search-page .search-content .page-title {
+      font-family: Novecento Sans Web,sans-serif;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      padding: 1rem 0 1rem 0;
+      border-bottom: 1px solid #e1e1e1;
+      font-size: 2.4rem;
+      margin-top: 0;
+      margin-bottom: 3rem; }
+    .search-page .search-content .entry-header .entry-title {
+      font-family: Novecento Sans Web,sans-serif;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-size: 2.1rem; }
+      .search-page .search-content .entry-header .entry-title a {
+        color: #248a83;
+        text-decoration: none; }
+        .search-page .search-content .entry-header .entry-title a:hover {
+          color: #404040; }
+    .search-page .search-content label .search-field {
+      color: #666;
+      background-color: #f4f4f4;
+      border: 1px solid #e1e1e1;
+      border-radius: 0;
+      padding: 5px;
+      font-family: Merriweather ,serif; }
+    .search-page .search-content .search-submit {
+      visibility: hidden; }
+    .search-page .search-content .entry-summary {
+      color: #404040;
+      font-family: Merriweather ,serif;
+      margin-bottom: 5rem; }
+      .search-page .search-content .entry-summary p {
+        font-size: 1rem;
+        line-height: 1.75; }
+      .search-page .search-content .entry-summary .black-btn {
+        border: 1px black solid;
+        background-color: transparent;
+        color: black;
+        padding: .8rem 1.5rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: Novecento Sans Web,sans-serif;
+        font-size: .9rem; }
+        .search-page .search-content .entry-summary .black-btn:hover {
+          border-color: #248a83;
+          background-color: #248a83;
+          color: white; }
+  .search-page .sidebar {
+    -ms-flex-preferred-size: 28%;
+        flex-basis: 28%;
+    padding-top: 4rem;
+    padding-left: 5%;
+    border-left: 1px solid #e1e1e1;
+    line-height: 1.75; }
+    .search-page .sidebar .widget {
+      margin-bottom: 3rem; }
+      .search-page .sidebar .widget .widget-title {
+        font-size: 1.5rem;
+        font-family: Novecento Sans Web,sans-serif;
+        letter-spacing: 2px;
+        text-transform: uppercase; }
+      .search-page .sidebar .widget p {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+        .search-page .sidebar .widget p i {
+          line-height: 1.5; }
+        .search-page .sidebar .widget p a {
+          text-decoration: none;
+          margin-left: 10px;
+          font-size: 1.1rem;
+          color: inherit; }
+          .search-page .sidebar .widget p a .colored {
+            color: #248a83; }
+    .search-page .sidebar .tent-biz-hours-class {
+      font-size: 1.1rem; }
+      .search-page .sidebar .tent-biz-hours-class span {
+        font-weight: bold;
+        padding-right: 5px; }
+    .search-page .sidebar .widget_archive ul {
+      list-style: none;
+      margin-left: 0;
+      padding-left: 0; }
+      .search-page .sidebar .widget_archive ul a {
+        text-decoration: none;
+        font-size: 1.1rem;
+        color: #248a83; }
+
+.page404-content {
+  line-height: 1.25;
+  width: 1120px;
+  margin-right: auto;
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .page404-content .not-found {
+    padding-top: 2rem;
+    padding-right: 5%;
+    -ms-flex-preferred-size: 72%;
+        flex-basis: 72%; }
+    .page404-content .not-found .page-header {
+      color: #404040;
+      font-family: Merriweather,serif;
+      font-size: 16px;
+      font-size: 1rem;
+      line-height: 1.75; }
+      .page404-content .not-found .page-header .page-title {
+        font-family: Novecento Sans Web,sans-serif;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        font-size: 2.3rem; }
+    .page404-content .not-found .page-content label .search-field {
+      color: #666;
+      background-color: #f4f4f4;
+      border: 1px solid #e1e1e1;
+      border-radius: 0;
+      padding: 5px; }
+    .page404-content .not-found .page-content .search-submit {
+      visibility: hidden; }
+    .page404-content .not-found .page-content .widget_recent_entries .widgettitle {
+      font-family: Novecento Sans Web,sans-serif;
+      letter-spacing: 2px;
+      text-transform: uppercase; }
+    .page404-content .not-found .page-content .widget_recent_entries ul {
+      padding-left: 0;
+      margin-left: 0;
+      list-style: none; }
+      .page404-content .not-found .page-content .widget_recent_entries ul li {
+        line-height: 1.75; }
+        .page404-content .not-found .page-content .widget_recent_entries ul li a {
+          text-decoration: none;
+          color: #248a83;
+          line-height: 1.75; }
+    .page404-content .not-found .page-content .widget_categories .widget-title {
+      font-family: Novecento Sans Web,sans-serif;
+      letter-spacing: 2px;
+      text-transform: uppercase; }
+    .page404-content .not-found .page-content .widget_categories ul {
+      padding-left: 0;
+      margin-left: 0;
+      list-style: none; }
+      .page404-content .not-found .page-content .widget_categories ul li {
+        line-height: 1.75; }
+        .page404-content .not-found .page-content .widget_categories ul li a {
+          text-decoration: none;
+          color: #248a83;
+          line-height: 1.75; }
+    .page404-content .not-found .page-content .widget_archive .widgettitle {
+      font-family: Novecento Sans Web,sans-serif;
+      letter-spacing: 2px;
+      text-transform: uppercase; }
+    .page404-content .not-found .page-content .widget_archive p {
+      margin-bottom: 0.7rem; }
+    .page404-content .not-found .page-content .widget_archive select {
+      color: #404040;
+      font-family: Merriweather Web,serif;
+      font-size: 1.2rem; }
+  .page404-content .sidebar {
+    -ms-flex-preferred-size: 28%;
+        flex-basis: 28%;
+    padding-top: 4rem;
+    padding-left: 5%;
+    border-left: 1px solid #e1e1e1;
+    line-height: 1.75; }
+    .page404-content .sidebar .widget {
+      margin-bottom: 3rem; }
+      .page404-content .sidebar .widget .widget-title {
+        font-size: 1.5rem;
+        font-family: Novecento Sans Web,sans-serif;
+        letter-spacing: 2px;
+        text-transform: uppercase; }
+      .page404-content .sidebar .widget p {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+        .page404-content .sidebar .widget p i {
+          line-height: 1.5; }
+        .page404-content .sidebar .widget p a {
+          text-decoration: none;
+          margin-left: 10px;
+          font-size: 1.1rem;
+          color: inherit; }
+          .page404-content .sidebar .widget p a .colored {
+            color: #248a83; }
+    .page404-content .sidebar .tent-biz-hours-class {
+      font-size: 1.1rem; }
+      .page404-content .sidebar .tent-biz-hours-class span {
+        font-weight: bold;
+        padding-right: 5px; }
+    .page404-content .sidebar .widget_archive ul {
+      list-style: none;
+      margin-left: 0;
+      padding-left: 0; }
+      .page404-content .sidebar .widget_archive ul a {
         text-decoration: none;
         font-size: 1.1rem;
         color: #248a83; }

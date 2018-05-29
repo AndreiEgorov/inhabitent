@@ -88,9 +88,62 @@ get_header(); ?>
 
 				
 
-				<div class="adventures-container">
 
+
+
+
+				<section class="adventures-container">
+
+
+
+
+					
 					<div class="section-title">
+							<h2>LATEST ADVENTURES</h2>
+					</div>
+
+					<?php
+						$args = array( 'post_type' => 'adventures', 'posts_per_page' =>4, 'order' => 'ASC' );
+						$adventure_posts = get_posts( $args ); // returns an array of posts
+						?>
+					<div class="adventure-stories">
+
+							<?php foreach ( $adventure_posts as $post ) : setup_postdata( $post ); ?>
+						<div class="journal-article" >
+
+							
+								<?php the_post_thumbnail(); ?>
+							
+
+							<div class= "journal-article-info">
+										
+								<h2 class="journal-article-title"><?php the_title();?> </h2>
+								<a href="<?php the_permalink();?>" class="btn-transparent">READ MORE</a>
+							</div>	
+
+						</div>
+
+						<?php endforeach; wp_reset_postdata(); ?>
+					</div>
+
+
+
+					<p>
+						<a href="<?php echo get_post_type_archive_link( 'adventures' ); ?>" class="btn-more-adventures">MORE ADVENTURES</a>
+						
+	
+					</p> 
+
+
+
+
+
+
+
+
+
+
+					<!-- <div class="section-title">
 						<h2>LATEST ADVENTURES</h2>
 					</div>
 
@@ -137,10 +190,16 @@ get_header(); ?>
 
 					<p>
 						<a href="#" class="btn-more-adventures">MORE ADVENTURES</a>
-					</p>
+					</p> -->
 
 
-				</div>
+				</section>
+
+
+
+
+
+
 
 			</main><!-- #main -->
 		</div><!-- #primary -->

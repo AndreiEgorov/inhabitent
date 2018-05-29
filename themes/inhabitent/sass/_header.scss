@@ -119,15 +119,41 @@
 			}
 			
 		}
+		// .search-field-focus{
+		// 	opacity: 1
+		// }
+		// .search-field{
+		// 	opacity:0
+		// }
 
 
-		.search-form{
-			flex-basis: 0%;
-			.search-field{
-				width: 200px;
-			}
+		// .search-form{
+		// 	flex-basis: 0%;
+		// 	transition: 1s;
+
+		// 	.search-field {
+		// 		// width: 0;
+		// 		// opacity: 0;
+		// 		// overflow: hidden;
+		// 		display: none;
+		// 		// display none and block don't animate between states
+		// 	}
+
+		// 	&.open{
+		// 		flex-basis: 35%;
+		// 		.search-field {
+		// 			// width: auto;
+		// 			// opacity: 1;
+		// 			display: block;
+		// 			text-transform: uppercase;
+		// 		}
+		// 	}
 			
-		}
+		// 	.search-field{
+		// 		width: 200px;
+		// 	}
+			
+		// }
 	}
 
 	.white-logo,
