@@ -1,24 +1,19 @@
-
 //products shop
 .shop-content{
     .menu-item{
         color: #248a83;
     }
-
     .content-container{
         padding: 3rem 0;
         width: 1120px;
         margin-left: auto;
         margin-right: auto;
-        
         .shop{
             text-align:center;
             h2{
                 font-weight: bold;  
             }
-        
         }
-
         .product-categories{
             display: flex;
             justify-content: space-evenly;
@@ -28,35 +23,29 @@
             padding-top:1rem;
             border-bottom: $dashed_border;
             margin-left: 0;
+            text-transform: uppercase;
             margin-bottom: 2.5rem;
-            
             .kind-of-category{
                 text-decoration: none;
                 font-family: Novecento Sans Web,sans-serif;
                 color: #248a83;
             }
-            
         }
-
         .item-grid{
             display:grid;
             grid-template-columns: repeat(4, 23.4%);
             grid-template-rows: repeat(4, 250px);
             grid-gap: 1.5rem;
             justify-content: center;
-
-
             .item-image{
                 background-color: #e1e1e1;
                 height: 80%;
-
                 img{
                     object-fit: cover;
                     width: 100%;
                     height: 98%;
                 }
             }
-
             .item-info{
                 display: flex;
                 .item-name{
@@ -72,7 +61,6 @@
                 }
             }
         }
-
         .item-price,
         .item-name{
             background: #fff;
@@ -84,11 +72,6 @@
             line-height: 1.75;
             padding-right: .25rem;
             text-transform: none;
-            
         }
-
-
-
-       
     }
 }

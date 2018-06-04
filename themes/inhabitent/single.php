@@ -37,7 +37,6 @@ get_header(); ?>
 				<div class="sidebar">	
 					<?php get_sidebar(); ?>
 				</div>	
-		
 
 			</section>
 		</main><!-- #main -->

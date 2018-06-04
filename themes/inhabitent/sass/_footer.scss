@@ -1,12 +1,8 @@
-
-
-
 .footer-container{
     background-image: url(../../assets/images/dark-wood.png);
 	display:flex;
 	flex-wrap: wrap;
 	padding: 2rem;
-
 	.contact-info{
 		flex-basis: 25%;
 		color: white;
@@ -20,7 +16,6 @@
 				text-decoration: underline;
 			}
 		}
-
 		.fa-icons{
 			font-size: 1.2rem;
 			letter-spacing: 2px;
@@ -51,8 +46,5 @@
 			text-decoration: none;
 			margin-top: 3rem;
 		}
-		
-
 	}
-
 }

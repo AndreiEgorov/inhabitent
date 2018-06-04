@@ -1,17 +1,11 @@
-
-
-
-
 .site-header{
 	border-bottom: $solid-border;
-
 	.white-logo {
 		display: none;		
 	}
 	.green-logo{
 		display:block;
 		}
-
 	.main-navigation{
 		a{
 			color: #248a83;
@@ -19,9 +13,7 @@
 				color: $brand_purple;
 			}
 		}
-		
 	}
-					
 	.search-form{
 		border: none;
 		display: flex;
@@ -35,19 +27,13 @@
 			}
 		}
 	}		
-	
-	
 }
-
 .home,
 .page-template-about{
-
-
 	.site-header{
 		.header-container{
 			position: absolute;
 		}
-
 		.white-logo {
 			display: block;		
 		}
@@ -61,7 +47,6 @@
 					color: $brand_yellow;
 				}
 			}
-			
 		}	
 		.fa-search{
 			color: white;
@@ -69,7 +54,6 @@
 					color: $brand_yellow;
 				}
 		}
-		
 	}
 	.banner-stick{
 		position:fixed;
@@ -77,9 +61,6 @@
 		.header-container{
 			background-color: rgba(255, 255, 255, 0.85);
 			border-bottom: $solid-border;
-			
-			
-
 			.main-navigation{
 				.menu{
 					li{
@@ -87,26 +68,16 @@
 							color: #248a83;
 						}
 					}
-					
 				}
 				.search-form{
-					
 					.fa-search{
 						color: #248a83;
 					}
-					
-					
-					
 				}
-			
 			}
-
 		}
-		
 	}
-	
 }
-
 .header-container{
 	width: 100%;
 	.menu-container{
@@ -115,56 +86,39 @@
 	display: flex;
 	margin-left: auto;
 	margin-right: auto;
-
-
 		//nav and search bar
 		.main-navigation{
 			flex-basis: 60%; 
 			display: flex;
 			justify-content: flex-end;
 			align-items: center;
-
 			.menu-main-menu-container{
 				flex-basis: 65%;
-			
 				.menu{
 					text-transform: uppercase;
 					display: flex;
 					justify-content: space-evenly;
 					font-family:  Novecento Sans Web,sans-serif;
-
 					// a{
 					// 	color: #248a83;
 					// }
-				
 				}
-				
 			}
 			.search-form{
 				.search-submit{
 					border: none;
-					
 					background: transparent;
 					box-shadow:none;
 					font-size: 1rem;
 				}
 			}
 		}
-
 		.white-logo,
 		.green-logo{
-			
 			flex-basis: 40%;
 			img{
 				max-width: 50px;
 			}
 		}
-	
-	
-
 }
-
-
 }
-
-

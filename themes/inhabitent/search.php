@@ -12,7 +12,6 @@ get_header(); ?>
 
 			<div class="search-page">
 
-
 				<div class="search-content">
 
 					<?php if ( have_posts() ) : ?>
@@ -26,11 +25,8 @@ get_header(); ?>
 
 							<?php get_template_part( 'template-parts/content', 'search' ); ?>
 
-
 						<?php endwhile; ?>
-
 						
-
 					<?php else : ?>
 
 						<?php get_template_part( 'template-parts/content', 'none' ); ?>

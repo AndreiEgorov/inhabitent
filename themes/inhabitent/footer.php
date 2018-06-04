@@ -6,7 +6,6 @@
  */
 
 ?>
-
 			</div><!-- #content -->
 
 			<footer id="colophon" class="site-footer" role="contentinfo">
@@ -39,7 +38,6 @@
 					</div><!-- .site-info -->
 
 				</div>
-
 				
 			</footer><!-- #colophon -->
 		</div><!-- #page -->

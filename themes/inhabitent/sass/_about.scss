@@ -1,26 +1,19 @@
 .page-template-about{
     .entry-header{
-    
         display: flex;
         justify-content: center;
-        align-items: center;
-       
-        
-
+        align-items: center;    
         .entry-title{
             color: white;
             font-size: 3rem;
             text-transform: uppercase;
             font-family: Novecento Sans Web,sans-serif;
-            letter-spacing: 2px;
-            
+            letter-spacing: 2px;   
         }
-
     }
     .entry-content{
         width: 800px;
         margin: 3rem auto;
-        
         h2{
             font-size: 2rem;
             font-family: Novecento Sans Web,sans-serif;
@@ -35,15 +28,6 @@
                 font-size: 1rem;
                 line-height: 1.75;
             }
-           
-            
         }
     }
-
-
-
-
-
-
-
 }

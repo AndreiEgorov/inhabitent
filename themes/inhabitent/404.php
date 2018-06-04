@@ -13,8 +13,6 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 			<div class="page404-content">
 
-				
-
 				<section class="error-404 not-found">
 					<header class="page-header">
 						<h1 class="page-title"><?php echo esc_html( 'Oops! That page can&rsquo;t be found.' ); ?></h1>
@@ -54,8 +52,7 @@ get_header(); ?>
 
 				<div class="sidebar">
               		<?php get_sidebar(); ?>
-           		 </div>				
-
+           		 </div>			
 
 			</div>							
 		</main><!-- #main -->

@@ -24,8 +24,6 @@ get_header(); ?>
 						<?php /* Start the Loop */ ?>
 						<?php while ( have_posts() ) : the_post(); ?>
 
-
-
 							<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 								<header class="entry-header">
 									<?php if ( has_post_thumbnail() ) : ?>
@@ -62,14 +60,9 @@ get_header(); ?>
 					<?php get_sidebar(); ?>
 				</div>	
 
-				
-
-
 			</section>
-				
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
 
 <?php get_footer(); ?>

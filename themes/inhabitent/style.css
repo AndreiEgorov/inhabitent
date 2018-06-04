@@ -1235,6 +1235,7 @@ object {
     padding-top: 1rem;
     border-bottom: 1px dashed #c8c8c8;
     margin-left: 0;
+    text-transform: uppercase;
     margin-bottom: 2.5rem; }
     .shop-content .content-container .product-categories .kind-of-category {
       text-decoration: none;
@@ -1297,7 +1298,8 @@ object {
       font-family: Novecento Sans Web,sans-serif;
       font-weight: bold;
       font-size: 2.5rem;
-      margin-top: 0; }
+      margin-top: 0;
+      text-transform: uppercase; }
     .content-container .page-header .taxonomy-description {
       margin: 2rem 0;
       font-size: 1rem; }

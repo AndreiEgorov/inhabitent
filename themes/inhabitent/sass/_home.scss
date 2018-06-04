@@ -5,19 +5,13 @@
     margin-left: auto;
     display: flex;
     justify-content: space-between;
-
-
-
     .journal-content{
         flex-basis: 72%;
-
         .entry-header{
             position: relative;
-        
                 img{
                     width: 92%;
                 }
-
             .entry-title{
                 font-family: Novecento Sans Web,sans-serif;
                 letter-spacing: 2px;
@@ -37,7 +31,6 @@
                     width: 92%;
                 }
             }
-          
             .entry-meta{
                 font-family: Novecento Sans Web,sans-serif;
                 letter-spacing: 2px;
@@ -56,10 +49,8 @@
                 }  
             }            
         }
-        
         .entry-content{
                 margin-bottom: 5rem;
-
             .p1{
                 // font-family: Merriweather Web,serif;
                 width: 92%;
@@ -75,7 +66,6 @@
                 text-transform: uppercase;
                 font-family: Novecento Sans Web,sans-serif;
                 font-size: .9rem;
-
             }
             a:hover{
                 border-color: #248a83;
@@ -83,40 +73,28 @@
                 color: white;
             }
         }
-       
-
-    
     }
-
     .sidebar{
-        
-    
         flex-basis: 28%;
         padding-top: 4rem;
         padding-left: 5%;
         border-left: $solid-border;
         line-height: 1.75;
-
         .widget{
             margin-bottom:3rem;
-
             .widget-title{
                 font-size: 1.5rem;
                 font-family: Novecento Sans Web,sans-serif;
                 letter-spacing: 2px;
                 text-transform: uppercase;
             }
-        
-                
             p{
                 display: flex;
                 i{
                     line-height: 1.5;
                 }
-
                 a{
                     text-decoration: none;
-                    
                     margin-left: 10px;
                     font-size: 1.1rem;
                     color: inherit;
@@ -126,15 +104,12 @@
                 }
             }
             }   
-            
         .tent-biz-hours-class{
             font-size: 1.1rem;
             span{
                 font-weight: bold;
                 padding-right: 5px;
-
             }
-
         } 
         .widget_archive{
             ul{
@@ -148,18 +123,5 @@
                 }
             }
         }
-    
-        
-        
     }
-
-
-
-
-
-
-
-
-
-
 }

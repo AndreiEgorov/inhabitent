@@ -10,10 +10,7 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-		
-
 			<div class="content-container">
-
 		
 					<header class="page-header">
 						<?php
@@ -21,18 +18,12 @@ get_header(); ?>
 							the_archive_description( '<div class="taxonomy-description">', '</div>' );
 						?>
 					</header>
-			
-
-	
 
 				<?php if ( have_posts() ) : ?>
-					
-				
 
 					<ul class="item-grid-small">	
 						<?php while ( have_posts() ) : the_post(); ?>
-				
-						
+								
 							<li class="shop-item">
 
 									<div class="item-image">
@@ -45,12 +36,10 @@ get_header(); ?>
 									</div>	
 								
 							</li>
-						
 
 						<?php endwhile; ?>
 
 					</ul>	
-
 
 				<?php else : ?>
 
@@ -59,11 +48,7 @@ get_header(); ?>
 				<?php endif; ?>
 			</div>	
 
-
-				
-		
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
 
 <?php get_footer(); ?>

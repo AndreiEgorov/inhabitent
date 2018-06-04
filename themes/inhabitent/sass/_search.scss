@@ -1,6 +1,3 @@
-
-
-
     .search-page{
         line-height: 1.25;
         width: 1120px;
@@ -8,14 +5,10 @@
         margin-left: auto;
         display: flex;
         justify-content: space-between;
-    
-    
-    
         .search-content{
             padding-top: 2rem;
             padding-right: 5%;
             flex-basis: 72%;
-
             .page-title{
                 font-family: Novecento Sans Web,sans-serif;
                 letter-spacing: 2px;
@@ -27,7 +20,6 @@
                 margin-bottom: 3rem;
             }
             .entry-header{
-               
                 .entry-title{
                     font-family: Novecento Sans Web,sans-serif;
                     letter-spacing: 2px;
@@ -40,15 +32,10 @@
                             color:#404040;
                         }
                     }
-                   
                 }
-              
-                
-                          
             }
             //Textfield and search button
             label{
-                    
                 .search-field{
                     color: #666;
                     background-color: #f4f4f4;
@@ -56,18 +43,12 @@
                     border-radius: 0;
                     padding: 5px;
                     font-family: Merriweather ,serif;
-                    
                 }
-                
             }
-           
             .search-submit{
                 visibility: hidden;
             }   
             //_____
-
-
-
             .entry-summary{
                 color: #404040;
                 font-family: Merriweather ,serif;
@@ -76,9 +57,7 @@
                     font-size: 1rem;
                     line-height: 1.75
                 }
-
                 .black-btn{
-                     
                         border: 1px black solid;
                         background-color: transparent;
                         color: black;
@@ -87,8 +66,6 @@
                         text-transform: uppercase;
                         font-family: Novecento Sans Web,sans-serif;
                         font-size: .9rem;
-        
-                    
                     &:hover{
                         border-color: #248a83;
                         background-color: #248a83;
@@ -96,38 +73,28 @@
                     }
                 }
             }
-
         }
-    
         .sidebar{
-            
-        
             flex-basis: 28%;
             padding-top: 4rem;
             padding-left: 5%;
             border-left: $solid-border;
             line-height: 1.75;
-    
             .widget{
                 margin-bottom:3rem;
-    
                 .widget-title{
                     font-size: 1.5rem;
                     font-family: Novecento Sans Web,sans-serif;
                     letter-spacing: 2px;
                     text-transform: uppercase;
                 }
-            
-                    
                 p{
                     display: flex;
                     i{
                         line-height: 1.5;
                     }
-    
                     a{
                         text-decoration: none;
-                        
                         margin-left: 10px;
                         font-size: 1.1rem;
                         color: inherit;
@@ -137,15 +104,12 @@
                     }
                 }
                 }   
-                
             .tent-biz-hours-class{
                 font-size: 1.1rem;
                 span{
                     font-weight: bold;
                     padding-right: 5px;
-    
                 }
-    
             } 
             .widget_archive{
                 ul{
@@ -159,37 +123,5 @@
                     }
                 }
             }
-        
-            
-            
         }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

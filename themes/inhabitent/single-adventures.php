@@ -12,11 +12,6 @@ get_header(); ?>
        
 		<?php while ( have_posts() ) : the_post(); ?>
 
-            
-            
-
-
-
 <?php
 /**
  * Template part for displaying single posts.
@@ -25,7 +20,6 @@ get_header(); ?>
  */
 
 ?>
-
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<section class="content-container">

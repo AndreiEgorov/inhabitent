@@ -6,15 +6,10 @@
  */
 ?>	
 
-
 		<?php get_header(); ?>
 
-
-	
 		<div id="primary" class="content-area shop-content">
 
-
-		
 			<main id="main" class="site-main" role="main">
 
 				<div class="content-container">
@@ -32,13 +27,11 @@
 							//d($terms);
 							if(!empty($terms) && ! is_wp_error( $terms )) :
 							?>
-
 							<?php foreach ( $terms as $term ) : ?>
 
 									<li>
 										<a href="<?php echo get_term_link( $term ); ?>" class="kind-of-category"> <?php echo $term->name; ?> </a>
 									</li>
-
 
 								<?php endforeach; ?>	
 								
@@ -68,13 +61,10 @@
 							<?php endforeach; wp_reset_postdata(); ?>
 					</div>
 
-
 				</div>
 
 			</main><!-- #main -->
 		</div><!-- #primary -->
-
-	
 
 <?php get_footer(); ?>
 

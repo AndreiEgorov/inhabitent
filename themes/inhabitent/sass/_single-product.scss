@@ -1,21 +1,15 @@
 .single-product{
-
     .content-container{
-      
         display: flex;
         justify-content: space-between;
-
         .product-image{
             flex-basis: 48%;
         }
-
         .info-block{
             flex-basis: 48%;
-
             .entry-header{
                 color: #d99054;
                 text-transform: uppercase;
-
                 .entry-title{
                     font-family: Novecento Sans Web,sans-serif;
                     margin-top: 0;
@@ -31,10 +25,8 @@
                 display: flex;
                 justify-content: space-between;
                 width: 66%;
-            
                 a{
                     text-decoration: none;
-                    
                     .button{
                         padding: 5px 26px;
                         text-decoration: none;
@@ -53,20 +45,8 @@
                         background-color: #248a83;
                         border-color: #248a83;
                     }
-
-
-
                 }
-               
-                
-                
             }
-
         }
     }
-
-
-
-
-
 } 
