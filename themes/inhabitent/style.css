@@ -829,6 +829,16 @@ object {
         -webkit-box-shadow: none;
                 box-shadow: none;
         font-size: 1rem; }
+      .header-container .menu-container .main-navigation .search-form .search-field {
+        width: 0;
+        opacity: 0;
+        -webkit-transition: 0.4s;
+        transition: 0.4s; }
+      .header-container .menu-container .main-navigation .search-form .search-active {
+        width: 10.5rem;
+        opacity: 1;
+        -webkit-transition: 0.4s;
+        transition: 0.4s; }
     .header-container .menu-container .white-logo,
     .header-container .menu-container .green-logo {
       -ms-flex-preferred-size: 40%;

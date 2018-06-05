@@ -110,8 +110,21 @@
 					background: transparent;
 					box-shadow:none;
 					font-size: 1rem;
+					
+				}
+				
+				.search-field{
+					width: 0;
+					opacity:0;
+					transition: 0.4s;
+				}
+				.search-active{
+					width: 10.5rem;
+					opacity:1;
+					transition: 0.4s;
 				}
 			}
+
 		}
 		.white-logo,
 		.green-logo{
