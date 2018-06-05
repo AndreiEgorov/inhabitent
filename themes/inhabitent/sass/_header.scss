@@ -111,15 +111,17 @@
 					box-shadow:none;
 					font-size: 1rem;
 					
+					
 				}
 				
 				.search-field{
 					width: 0;
 					opacity:0;
-					transition: 0.4s;
+					transition: 0.5s;
+					text-transform: uppercase;
 				}
 				.search-active{
-					width: 10.5rem;
+					width: 11.5rem;
 					opacity:1;
 					transition: 0.4s;
 				}

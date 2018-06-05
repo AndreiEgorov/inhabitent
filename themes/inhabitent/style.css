@@ -832,10 +832,11 @@ object {
       .header-container .menu-container .main-navigation .search-form .search-field {
         width: 0;
         opacity: 0;
-        -webkit-transition: 0.4s;
-        transition: 0.4s; }
+        -webkit-transition: 0.5s;
+        transition: 0.5s;
+        text-transform: uppercase; }
       .header-container .menu-container .main-navigation .search-form .search-active {
-        width: 10.5rem;
+        width: 11.5rem;
         opacity: 1;
         -webkit-transition: 0.4s;
         transition: 0.4s; }
